@@ -1,0 +1,15 @@
+{
+	"Navigation": {
+		"home": "Home",
+		"about": "About Us",
+		"contact": "Contact"
+	},
+	"Hero": {
+		"title": "Welcome to Calma Tierra",
+		"subtitle": "Connecting with nature, one step at a time.",
+		"cta": "Get Started"
+	},
+	"Footer": {
+		"rights": "All rights reserved."
+	}
+}
