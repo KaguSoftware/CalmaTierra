@@ -27,7 +27,7 @@ const TechSpec = () => {
                     </div>
                     {SPEC_CONTENT.Box.map((Box) => (
                         <div
-                            key={null}
+                            key={Box.title}
                             className={`h-40 bg-amber-400 flex flex-col rounded-2xl border-l-10 ${Box.borderColor}`}
                         >
                             <h1>{Box.title}</h1> <p>{Box.desc}</p>

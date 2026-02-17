@@ -25,20 +25,19 @@ const ProductsHero = () => {
                     </div>
                 </div>
 
-                <div className="h-full w-full flex items-center justify-center bg-gray-300 p-10">
-                    <div className="absolute bg-linear-to-r from-white to-transparent flex w-full h-140"></div>{" "}
-                    {/*PARSA plz let me know if this is ugly i might forget to ask  */}
+                <div className="h-full w-full flex relative items-center justify-center bg-gray-300">
                     <Image
-                        src="/heroo.png"
+                        src="/ProductsHero.png"
                         alt="Kagu Logo"
                         width={400}
                         height={400}
-                        className="object-contain max-h-full"
+                        className="h-full w-full"
                     />
-                    {/* IDFK WHY THIS DOESNT WORK */}
+                    <span className="absolute bg-linear-to-r from-white/60 to-transparent flex w-full h-full"></span>
+                    {/*PARSA plz let me know if this is ugly i might forget to ask  */}
                 </div>
             </div>
-            <span className="absolute flex justify-self-center self-end ml-24 rotate-17 h-120 w-45 bg-white [clip-path:polygon(-2%_0%,0%_14%,100%_1%,100%_90%,9%_100%)]"></span>
+            <span className="absolute flex justify-self-center top-28 ml-45 rotate-17 h-120 w-40 bg-white [clip-path:polygon(-2%_0%,0%_13%,100%_1%,100%_90%,9%_100%)]"></span>
         </main>
     );
 };
