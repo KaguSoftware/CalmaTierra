@@ -24,9 +24,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="mx-auto text-xl text-center m-6 max-w-2xl">
-                        CalmaTierra is an internationally successful fertilizer distributor
-                        located in Marbella, Spain, bridging the gap between premium
-                        refineries and global agriculture.
+                        CalmaTierra is an internationally successful fertilizer distributor located in Marbella, Spain, bridging the gap between premiumrefineries and global agriculture.
                     </p>
 
                     <div className="flex flex-col items-center justify-center gap-4 sm:flex-row font-bold text-lg ">

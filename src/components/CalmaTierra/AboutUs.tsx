@@ -16,11 +16,7 @@ export default function About() {
                         </h2>
 
                         <p className="mt-6 text-lg text-gray-800 text-justify">
-                            At CalmaTierra, we understand that agriculture is the backbone of
-                            civilization. Based in the strategic hub of Marbella, Spain, we
-                            operate as a vital link in the global supply chain, ensuring that
-                            high-quality fertilizers reach farmers and distributors
-                            efficiently and reliably.
+                            At CalmaTierra, we understand that agriculture is the backbone of civilization. Based in the strategic hub of Marbella, Spain, we operate as a vital link in the global supply chain, ensuring that high-quality fertilizers reach farmers and distributors efficiently and reliably.
                         </p>
 
                         <div className="mt-10 space-y-6">
@@ -55,7 +51,6 @@ export default function About() {
                         </div>
                     </div>
 
-                    {/* Right Grid */}
                     <div className="flex justify-center lg:block">
                         <div className="relative">
                             <div className="absolute -right-8 -top-5 hidden h-full w-full rounded-xl border-2 border-[#BFA05A] lg:block" />
