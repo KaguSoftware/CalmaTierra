@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { HERO_CONTENT } from "./constants";
 
 export default function Hero() {
     return (
@@ -7,10 +8,8 @@ export default function Hero() {
             {/* background image and overlay */}
             <div>
                 <Image
-                    src="/farm.png"
-                    alt="farm"
-                    fill
-                    className="object-cover"
+                    src={image.src}
+                    alt={image.src}
                 />
                 <div className="absolute inset-0 bg-black/60" />
             </div>
