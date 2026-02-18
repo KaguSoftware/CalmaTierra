@@ -75,7 +75,7 @@ export default function Navbar() {
 
 				{/* Mobile Menu */}
 				{isOpen && (
-					<div className="md:hidden fixed inset-x-0 top-20 bottom-0 bg-white z-[9998] animate-in fade-in slide-in-from-top-2 duration-200">
+					<div className="md:hidden fixed inset-x-0 top-20 bottom-0 bg-white/100 animate-in fade-in slide-in-from-top-2 duration-200">
 						<div className="flex flex-col gap-6 px-6 py-8 border-t border-neutral-100">
 							{NAVBAR_PAGES.map((item, index) => (
 								<Link
@@ -87,7 +87,7 @@ export default function Navbar() {
 									{t(item.page)}
 								</Link>
 							))}
-							
+
 							{/* Single Button Language Switcher Mobile */}
 							<button
 								onClick={() => {
@@ -97,7 +97,9 @@ export default function Navbar() {
 								className="flex items-center justify-center gap-2 w-full py-3 rounded-xl border border-neutral-200 text-lg font-bold text-green-900 bg-neutral-50 active:bg-neutral-100 transition-all"
 							>
 								<Globe className="w-5 h-5" />
-								{locale === "en" ? "Switch to Español" : "Cambiar a English"}
+								{locale === "en"
+									? "Switch to Español"
+									: "Cambiar a English"}
 							</button>
 
 							<Link
