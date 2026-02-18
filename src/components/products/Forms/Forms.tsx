@@ -34,13 +34,13 @@ const Forms = () => {
                         </div>
                         <div className="gap-4 flex flex-col">
                             <p>{cards.desc.desc}</p>
-                            {FORMS_CONTENT.cards.map((List) => (
+                            {cards.List.map((item, index) => (
                                 <div
-                                    key={cards.title}
+                                    key={`${item}-${index}`}
                                     className="flex items-center"
                                 >
                                     <cards.icon className="size-10 text-blue-300" />
-                                    {cards.List}
+                                    <p>{item}</p>
                                 </div>
                             ))}
                         </div>
