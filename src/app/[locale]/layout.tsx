@@ -1,6 +1,6 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import Navbar from "@/src/components/test/navbar/Navbar";
+import Navbar from "@/src/components/navbar/Navbar";
 
 export default async function LocaleLayout({
 	children,
