@@ -31,7 +31,7 @@ export default function Navbar() {
 							{item.page}
 						</Link>
 					))}
-					<Link href={"/contactus"}>
+					<Link href={"/contact"}>
 						<button className="px-4 text-white hover:bg-green-800 font-semibold py-2 rounded-md bg-green-900">
 							Contact Us
 						</button>
@@ -57,7 +57,7 @@ export default function Navbar() {
 								</Link>
 							))}
 							<Link
-								href="/contactus"
+								href="/contact"
 								onClick={() => SetIsOpen(false)}
 							>
 								<button className="px-4 py-2 rounded-md bg-green-900 text-white font-semibold">
