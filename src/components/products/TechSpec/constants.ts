@@ -1,27 +1,35 @@
 import { specContent } from "./types";
-import { CheckCheck } from "lucide-react";
+import { Check } from "lucide-react";
 export const SPEC_CONTENT: specContent = {
     header: {
-        header: "Spec.header.header",
-        title: "Spec.header.title",
-        desc: "Spec.header.desc",
+        header: "Products.Spec.header.header",
+        title: "Products.Spec.header.title",
+        desc: "Products.Spec.header.desc",
     },
     lcard: {
-        title: "Spec.lcard.title",
-        icon: CheckCheck,
-        list: ["Spec.lcard.list1", "Spec.lcard.list2"],
+        title: "Products.Spec.lcard.title",
+        icon: Check,
+        list: [
+            "Products.Spec.lcard.list.1",
+            "Products.Spec.lcard.list.2",
+            "Products.Spec.lcard.list.3",
+            "Products.Spec.lcard.list.4",
+        ],
     },
-    desc: { header: "Spec.desc.header", desc: "Spec.desc.desc" },
+    desc: {
+        header: "Products.Spec.desc.header",
+        desc: "Products.Spec.desc.desc",
+    },
     Box: [
         {
-            title: "Spec.box.1.title",
-            desc: "Spec.box.1.desc",
-            borderColor: "border-green-300",
+            title: "Products.Spec.box.1.title",
+            desc: "Products.Spec.box.1.desc",
+            borderColor: "border-green-900",
         },
         {
-            title: "Spec.box.2.title",
-            desc: "Spec.box.2.des",
-            borderColor: "border-blue-300",
+            title: "Products.Spec.box.2.title",
+            desc: "Products.Spec.box.2.desc",
+            borderColor: "border-yellow-300",
         },
     ],
 };

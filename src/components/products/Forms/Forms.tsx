@@ -1,4 +1,3 @@
-import { Circle } from "lucide-react";
 import { FORMS_CONTENT } from "./constants";
 import Image from "next/image";
 
@@ -13,7 +12,7 @@ const Forms = () => {
                 {FORMS_CONTENT.cards.map((cards) => (
                     <div
                         key={cards.title}
-                        className="w-full justify-between rounded-2xl bg-amber-400"
+                        className="w-full justify-between rounded-2xl bg-amber-400 shadow-xl"
                     >
                         <div className="relative">
                             <Image
@@ -28,13 +27,19 @@ const Forms = () => {
                             </h1>
                         </div>
                         <div className="flex justify-between m-5">
-                            <h1>{cards.desc.tag}</h1> <h2>{cards.desc.size}</h2>
+                            <h1 className="rounded-2xl p-1 bg-amber-100">
+                                {cards.desc.tag}
+                            </h1>{" "}
+                            <h2>{cards.desc.size}</h2>
                         </div>
                         <div className="gap-4 flex flex-col">
                             <p>{cards.desc.desc}</p>
                             {FORMS_CONTENT.cards.map((List) => (
-                                <div key={cards.title} className="flex gap-3">
-                                    <cards.icon />
+                                <div
+                                    key={cards.title}
+                                    className="flex items-center"
+                                >
+                                    <cards.icon className="size-10 text-blue-300" />
                                     {cards.List}
                                 </div>
                             ))}

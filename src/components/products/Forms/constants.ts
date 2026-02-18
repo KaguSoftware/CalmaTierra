@@ -1,4 +1,4 @@
-import { Circle } from "lucide-react";
+import { DotIcon } from "lucide-react";
 import { FormsContent } from "./types";
 export const FORMS_CONTENT: FormsContent = {
     title: "sdgsdfgsdf",
@@ -7,12 +7,16 @@ export const FORMS_CONTENT: FormsContent = {
         {
             img: { src: "/kagulogo.JPG", alt: "ghj" },
             title: "ghj",
-            desc: { tag: "gh", size: "jgh", desc: "jhg" },
+            desc: {
+                tag: "gh",
+                size: "jgh",
+                desc: "jhgghvcmhgcjhtdhgcjdjcjrrd",
+            },
             List: ["fsef", "sdf"],
-            icon: Circle,
+            icon: DotIcon,
         },
         {
-            img: { src: "/kagulogo.JPG", alt: "sdfqwew3trergecwerwerwe" },
+            img: { src: "/kagulogo.JPG", alt: "sdf" },
             title: "fsd",
             desc: {
                 tag: "dfs",
@@ -20,7 +24,7 @@ export const FORMS_CONTENT: FormsContent = {
                 desc: "sdferwetwerwsdwerwertwsdqwer",
             },
             List: ["fsd", "fsd"],
-            icon: Circle,
+            icon: DotIcon,
         },
     ],
 };
