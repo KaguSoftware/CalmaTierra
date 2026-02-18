@@ -1,4 +1,29 @@
 {
+    "HeroMain": {
+        "headerOne": "Reliable Name in the",
+        "headerTwo": "World of Fertilizer",
+        "discription": "CalmaTierra is an internationally successful fertilizer distributor located in Marbella, Spain, bridging the gap between premiumrefineries and global agriculture.",
+        "buttonOne": {
+            "label": "Explore Our Products"
+        },
+        "buttonTwo": {
+            "label": "Get In Touch"
+        }
+    },
+    "cardMain": {
+        "cardOne": {
+            "title": "Global Logistics",
+            "desc": "Seamless coordination of sea and land freight to ensure your fertilizer arrives on time, anywhere in the world."
+        },
+        "cardTwo": {
+            "title": "Quality Assurance",
+            "desc": "Every shipment is rigorously tested to meet international standards. We compromise on price, never on quality."
+        },
+        "cardThree": {
+            "title": "Long-term Partnership",
+            "desc": "We build relationships that last generations. Your growth and stability are the measures of our success."
+        }
+    },
     "Navigation": {
         "home": "Home",
         "about": "About Us",
@@ -16,8 +41,12 @@
         "hero": {
             "title": "Premium Nitrogen Fertilizers",
             "desc": "Powering global agriculture with high-purity Urea solutions. From source to soil, we ensure quality, consistency, and reliable delivery for your crop yields.",
-            "button1": { "label": "View Specifications" },
-            "button2": { "label": "Contact Sales" }
+            "button1": {
+                "label": "View Specifications"
+            },
+            "button2": {
+                "label": "Contact Sales"
+            }
         },
         "Spec": {
             "header": {
