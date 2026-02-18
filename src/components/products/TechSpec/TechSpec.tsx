@@ -6,7 +6,7 @@ const TechSpec = () => {
 
     return (
         <main className="w-full max-w-7xl mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-2 gap-15 relative">
+            <div className="md:grid grid-cols-2 gap-15 relative">
                 <div className="col-span-2 text-center grid gap-4 justify-center">
                     <h3 className="text-amber-500 text-xl">
                         {t(SPEC_CONTENT.header.header)}
@@ -21,7 +21,7 @@ const TechSpec = () => {
                         {t(SPEC_CONTENT.lcard.title)}
                     </h1>
                     {SPEC_CONTENT.lcard.list.map((list) => (
-                        <div key={list} className="flex gap-2">
+                        <div key={list} className="flex gap-2 items-center">
                             <SPEC_CONTENT.lcard.icon className="bg-neutral-400 rounded-full text-white" />
                             <h1 className="text-lg">{t(list)}</h1>
                         </div>
