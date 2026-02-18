@@ -1,18 +1,18 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import Navbar from "@/src/components/test/navbar/page";
+import Navbar from "@/src/components/test/navbar/Navbar";
 
 export default async function LocaleLayout({
-    children,
+	children,
 }: {
-    children: React.ReactNode;
+	children: React.ReactNode;
 }) {
-    const messages = await getMessages();
+	const messages = await getMessages();
 
-    return (
-        <NextIntlClientProvider messages={messages}>
-            <Navbar />
-            {children}
-        </NextIntlClientProvider>
-    );
+	return (
+		<NextIntlClientProvider messages={messages}>
+			<Navbar />
+			{children}
+		</NextIntlClientProvider>
+	);
 }
