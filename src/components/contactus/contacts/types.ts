@@ -1,5 +1,7 @@
+import { LucideIcon } from "lucide-react";
+
 export interface contacts {
     title: string;
-    icon: string;
+    icon: LucideIcon;
     desc: string;
 }
