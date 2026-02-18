@@ -11,7 +11,7 @@ export default function Cards() {
         {/* this is header part */}
         <div className="text-center">
           <h2 className="">
-            {t("home.cardsTitle")}
+            {t("CardMain.title")}
           </h2>
           <div className="mx-auto mt-3 h-0.75 w-28 rounded-full bg-[#b68b2d]"></div>
         </div>

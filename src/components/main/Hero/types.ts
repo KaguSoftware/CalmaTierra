@@ -1,12 +1,8 @@
 export interface HeroData {
-    header: string;
-    subheader: string;
+    headerOne: string;
+    headerTwo: string;
+    description: string;
     image: { src: string; alt: string };
-
-    buttons: HeroButton[];
-}
-
-export interface HeroButton {
-    label: string;
-    href: string;
+    buttonOne: { label: string; href: string };
+    buttonTwo: { label: string; href: string };
 }

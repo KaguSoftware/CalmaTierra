@@ -2,22 +2,22 @@ import { Handshake, ShieldCheck, Truck } from "lucide-react";
 
 export const CARD_FEATURES = [
     {
-        title: "home.cardOne.title",
-        desc: "home.cardOne.desc",
+        title: "cardMain.cardOne.title",
+        desc: "cardMain.cardOne.desc",
         Icon: Truck,
         accent: "#2f5d44",
         iconColor: "#b68b2d",
     },
     {
-        title: "home.cardTwo.title",
-        desc: "home.cardTwo.desc",
+        title: "cardMain.cardTwo.title",
+        desc: "cardMain.cardTwo.desc",
         Icon: ShieldCheck,
         accent: "#2f5d44",
         iconColor: "#b68b2d",
     },
     {
-        title: "home.cardThree.title",
-        desc: "home.cardThree.desc",
+        title: "cardMain.cardThree.title",
+        desc: "cardMain.cardThree.desc",
         Icon: Handshake,
         accent: "#2f5d44",
         iconColor: "#b68b2d",
