@@ -1,6 +1,8 @@
 import { Variants } from "motion/react";
 
-export const menuVariants: Variants = {
+//  Mobile Menu Animations
+
+export const mobileMenuVariants: Variants = {
 	initial: { x: "100%" },
 	animate: {
 		x: 0,
@@ -20,7 +22,7 @@ export const menuVariants: Variants = {
 	},
 };
 
-export const itemVariants: Variants = {
+export const mobileLinkVariants: Variants = {
 	initial: { opacity: 0, y: 20 },
 	animate: {
 		opacity: 1,
@@ -31,5 +33,16 @@ export const itemVariants: Variants = {
 		opacity: 0,
 		y: 20,
 		transition: { duration: 0.2 },
+	},
+};
+
+//  Desktop Animations
+export const desktopHoverProps = {
+	layoutId: "navbar-hover-bg",
+	initial: false,
+	transition: {
+		type: "spring",
+		bounce: 0.2,
+		duration: 0.6,
 	},
 };
