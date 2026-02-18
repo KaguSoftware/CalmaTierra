@@ -8,7 +8,7 @@ const TechSpec = () => {
         <main className="w-full max-w-7xl mx-auto px-4 md:px-6">
             <div className="md:grid grid-cols-2 gap-15 relative">
                 <div className="col-span-2 text-center grid gap-4 justify-center">
-                    <h3 className="text-amber-500 text-xl">
+                    <h3 className="text-[#c49f4f] text-xl">
                         {t(SPEC_CONTENT.header.header)}
                     </h3>
                     <h1 className="text-5xl">{t(SPEC_CONTENT.header.title)}</h1>
@@ -16,18 +16,18 @@ const TechSpec = () => {
                         {t(SPEC_CONTENT.header.desc)}
                     </p>
                 </div>
-                <div className="border-2 flex flex-col p-7 gap-2 border-gray-100 shadow-xl m-3 rounded-2xl">
+                <div className="border flex flex-col p-7 gap-2 border-gray-100 shadow-xl m-3 rounded-2xl">
                     <h1 className="text-[30px] text-green-900">
                         {t(SPEC_CONTENT.lcard.title)}
                     </h1>
                     {SPEC_CONTENT.lcard.list.map((list) => (
                         <div key={list} className="flex gap-2 items-center">
-                            <SPEC_CONTENT.lcard.icon className="bg-neutral-400 rounded-full text-white" />
+                            <SPEC_CONTENT.lcard.icon className="bg-[#c49f4f] rounded-full text-white" />
                             <h1 className="text-lg">{t(list)}</h1>
                         </div>
                     ))}
                 </div>
-                <div className=" absolute right-158 top-55 rotate-15 rounded-full py-8 px-4.5 text-xl text-white bg-amber-950 max-w-fit">
+                <div className=" absolute right-158 top-55 rotate-15 rounded-full py-8 px-4 text-2xl text-white bg-[#c49f4f] max-w-fit">
                     46%N
                 </div>
                 <div className="grid grid-cols-2 gap-6 ">

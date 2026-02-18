@@ -32,13 +32,13 @@ const ProductsHero = () => {
                 <div className="md:flex grid md:col-span-1 col-span-2 gap-5 md:bottom-30 md:absolute text-center text-xl">
                     <Link
                         href={HERO_CONTENT.button1.href}
-                        className="bg-green-900 p-3 rounded-md text-amber-50 hover:bg-green-950"
+                        className="bg-green-900 p-3 rounded-md text-white hover:bg-green-950"
                     >
                         {t(HERO_CONTENT.button1.label)}
                     </Link>
                     <Link
                         href={HERO_CONTENT.button2.href}
-                        className="bg-amber-50 p-3 rounded-md text-green-900 hover:bg-amber-100"
+                        className="bg-[#f5ead2] p-3 rounded-md text-green-900 hover:bg-[#ebddbe]"
                     >
                         {t(HERO_CONTENT.button2.label)}
                     </Link>
