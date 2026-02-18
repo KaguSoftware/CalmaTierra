@@ -1,8 +1,11 @@
-import HeroContactUs from "@/src/components/contactus/hero/hero";
+import Card from "@/src/components/contactus/card/Card";
+import Maplocation from "@/src/components/contactus/card/location/location";
 
-// src/app/[locale]/contact/page.tsx
 export default function ContactPage() {
-    return <main>Contact
-        <HeroContactUs />
-    </main>;
+    return (
+        <main className="grid gap-10 mt-5">
+            <Card />
+            <Maplocation />
+        </main>
+    );
 }

@@ -2,6 +2,7 @@
 	"Navigation": {
 		"home": "Inicio",
 		"about": "Nosotros",
+		"products": "Productos",
 		"contact": "Contacto"
 	},
 	"Hero": {
@@ -11,5 +12,73 @@
 	},
 	"Footer": {
 		"rights": "Todos los derechos reservados."
+	},
+	"HeroMain": {
+		"headerOne": "Un Nombre Confiable en el",
+		"headerTwo": "Mundo de los Fertilizantes",
+		"discription": "CalmaTierra es un distribuidor de fertilizantes exitoso internacionalmente ubicado en Marbella, España, uniendo la brecha entre refinerías premium y la agricultura global.",
+		"buttonOne": {
+			"label": "Explore Nuestros Productos"
+		},
+		"buttonTwo": {
+			"label": "Póngase en Contacto"
+		}
+	},
+	"CardMain": {
+		"title": "¿Por Qué Elegirnos?",
+		"cardOne": {
+			"title": "Logística Global",
+			"desc": "Coordinación perfecta de transporte marítimo y terrestre para asegurar que su fertilizante llegue a tiempo, en cualquier parte del mundo."
+		},
+		"cardTwo": {
+			"title": "Garantía de Calidad",
+			"desc": "Cada envío es rigurosamente probado para cumplir con estándares internacionales. Comprometemos el precio, nunca la calidad."
+		},
+		"cardThree": {
+			"title": "Asociación a Largo Plazo",
+			"desc": "Construimos relaciones que duran generaciones. Su crecimiento y estabilidad son las medidas de nuestro éxito."
+		}
+	},
+	"Products": {
+		"hero": {
+			"title": "Fertilizantes de Nitrógeno Premium",
+			"desc": "Potenciando la agricultura global con soluciones de Urea de alta pureza. Desde la fuente hasta el suelo, aseguramos calidad, consistencia y entrega confiable para sus cultivos.",
+			"button1": {
+				"label": "Ver Especificaciones"
+			},
+			"button2": {
+				"label": "Contactar Ventas"
+			}
+		},
+		"Spec": {
+			"header": {
+				"header": "ESPECIFICACIONES TÉCNICAS",
+				"title": "¿Qué es Urea 46% Nitrógeno?",
+				"desc": "El fertilizante sólido de nitrógeno más concentrado del mundo, esencial para el crecimiento saludable de las plantas y máxima eficiencia de rendimiento."
+			},
+			"lcard": {
+				"title": "Composición Química",
+				"list": {
+					"1": "Contenido de Nitrógeno: 46% Mínimo",
+					"2": "Biuret: 1.0% Máximo (Bajo Biuret)",
+					"3": "Humedad: 0.5% Máximo",
+					"4": "Forma: Sólida, Soluble en Agua"
+				}
+			},
+			"desc": {
+				"header": "¿Por Qué Elegir Nuestra Urea?",
+				"desc": "Nuestra urea proporciona una alta concentración de nitrógeno en una forma fácil de manejar y almacenar. Promueve el crecimiento vegetativo rápido y fortalece el sistema radicular."
+			},
+			"box": {
+				"1": {
+					"title": "Rentable",
+					"desc": "Costo más bajo por unidad de nitrógeno en comparación con otros fertilizantes."
+				},
+				"2": {
+					"title": "Aplicación Versátil",
+					"desc": "Adecuado para aplicación en el suelo, fertirrigación y pulverizaciones foliares."
+				}
+			}
+		}
 	}
 }
