@@ -8,8 +8,9 @@ export default function Hero() {
             {/* background image and overlay */}
             <div>
                 <Image
-                    src={image.src}
-                    alt={image.src}
+                    src={HERO_CONTENT.image.src}
+                    alt={HERO_CONTENT.image.alt}
+                    fill
                 />
                 <div className="absolute inset-0 bg-black/60" />
             </div>
