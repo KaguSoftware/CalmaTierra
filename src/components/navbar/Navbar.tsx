@@ -9,7 +9,7 @@ export default function Navbar() {
 	const toggleMenu = () => SetIsOpen((prev) => !prev);
 	return (
 		<main>
-			<nav className="w-full h-20 flex items-center gap-8 md:px-10 px-4 bg-white fixed">
+			<nav className="w-full h-20 z-999 flex items-center gap-8 md:px-10 px-4 bg-white/80 backdrop-blur-lg fixed">
 				<Link className="flex items-center gap-10 " href={"/home"}>
 					<Image
 						src={"/CalmaTierraLogo.jpeg"}
