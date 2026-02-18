@@ -16,7 +16,7 @@ const FIELDS_CONFIG = [
 		name: "email",
 		label: "Work Email",
 		type: "email",
-		placeholder: "john@company.com",
+		placeholder: "john@company.comm",
 		fullWidth: true,
 	},
 	{
