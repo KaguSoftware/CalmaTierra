@@ -7,7 +7,6 @@ export default function ContactPage() {
     return (
         <main className="grid gap-10 mt-5">
             <HeroContactUs />
-            <Contacts />
             <Card />
             <Maplocation />
         </main>
