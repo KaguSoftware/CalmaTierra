@@ -1,15 +1,53 @@
 {
-	"Navigation": {
-		"home": "Home",
-		"about": "About Us",
-		"contact": "Contact"
-	},
-	"Hero": {
-		"title": "Welcome to Calma Tierra",
-		"subtitle": "Connecting with nature, one step at a time.",
-		"cta": "Get Started"
-	},
-	"Footer": {
-		"rights": "All rights reserved."
-	}
+    "Navigation": {
+        "home": "Home",
+        "about": "About Us",
+        "contact": "Contact"
+    },
+    "Hero": {
+        "title": "Welcome to Calma Tierra",
+        "subtitle": "Connecting with nature, one step at a time.",
+        "cta": "Get Started"
+    },
+    "Footer": {
+        "rights": "All rights reserved."
+    },
+    "Products": {
+        "hero": {
+            "title": "Premium Nitrogen Fertilizers",
+            "desc": "Powering global agriculture with high-purity Urea solutions. From source to soil, we ensure quality, consistency, and reliable delivery for your crop yields.",
+            "button1": { "label": "View Specifications" },
+            "button2": { "label": "Contact Sales" }
+        },
+        "Spec": {
+            "header": {
+                "header": "TECHNICAL SPECIFICATIONS",
+                "title": "What is Urea 46% Nitrogen?",
+                "desc": "The world's most concentrated solid nitrogen fertilizer, essential for healthy plant growth and maximum yield efficiency."
+            },
+            "lcard": {
+                "title": "Chemical Composition",
+                "list": {
+                    "1": "Nitrogen Content: 46% Minimum",
+                    "2": "Biuret: 1.0% Maximum (Low Biuret)",
+                    "3": "Moisture: 0.5% Maximum",
+                    "4": "Form: Solid, Water Soluble"
+                }
+            },
+            "desc": {
+                "header": "Why Choose Our Urea?",
+                "desc": "Our urea provides a high concentration of nitrogen in a form that is easy to handle and store. It promotes rapid vegetative growth and strengthens the root system."
+            },
+            "box": {
+                "1": {
+                    "title": "Cost Effective",
+                    "desc": "Lowest cost per unit of nitrogen compared to other fertilizers."
+                },
+                "2": {
+                    "title": "Versatile Application",
+                    "desc": "Suitable for soil application, fertigation, and foliar sprays."
+                }
+            }
+        }
+    }
 }
