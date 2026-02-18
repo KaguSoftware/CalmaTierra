@@ -44,7 +44,7 @@ export default function Navbar() {
 					{IsOpen ? <LucideMenu /> : <X className="rotate:45" />}
 				</button>
 				{IsOpen && (
-					<div className="md:hidden absolute start-0 top-20 w-full bg-white border-t">
+					<div className="md:hidden absolute start-0 h-screen top-20 w-full bg-white border-t">
 						<div className="flex flex-col gap-4 px-4 py-6">
 							{NAVBAR_PAGES.map((item, index) => (
 								<Link
