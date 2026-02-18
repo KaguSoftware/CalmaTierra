@@ -10,7 +10,8 @@
             "label": "Get In Touch"
         }
     },
-    "cardMain": {
+    "CardMain": {
+        "title": "Why Choose Us",
         "cardOne": {
             "title": "Global Logistics",
             "desc": "Seamless coordination of sea and land freight to ensure your fertilizer arrives on time, anywhere in the world."
@@ -27,7 +28,8 @@
     "Navigation": {
         "home": "Home",
         "about": "About Us",
-        "contact": "Contact"
+        "products": "Products",
+        "contact": "Contact Us"
     },
     "Hero": {
         "title": "Welcome to Calma Tierra",

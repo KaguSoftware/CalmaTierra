@@ -1,22 +1,31 @@
 "use client";
 import { useState } from "react";
-import { LucideMenu, X } from "lucide-react";
+import { LucideMenu, X, Globe } from "lucide-react";
 import Image from "next/image";
 import { NAVBAR_PAGES } from "./constants";
-import Link from "next/link";
+import { Link, usePathname, useRouter } from "@/src/i18n/routing";
 import { useParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export default function Navbar() {
+	const t = useTranslations();
 	const [isOpen, setIsOpen] = useState(false);
+	const pathname = usePathname();
+	const router = useRouter();
 	const params = useParams();
 	const locale = params.locale as string;
 
 	const toggleMenu = () => setIsOpen((prev) => !prev);
 
+	const toggleLanguage = () => {
+		const newLocale = locale === "en" ? "es" : "en";
+		router.replace(pathname, { locale: newLocale });
+	};
+
 	return (
 		<div className="h-20">
 			<nav className="w-full h-20 z-[9999] flex items-center gap-8 md:px-10 px-4 bg-white/90 backdrop-blur-lg fixed top-0 left-0 border-b border-neutral-100">
-				<Link className="flex items-center gap-3" href={`/${locale}`}>
+				<Link className="flex items-center gap-3" href="/">
 					<div className="relative w-10 h-10 overflow-hidden rounded-full border border-green-900/10">
 						<Image
 							src={"/CalmaTierraLogo.jpeg"}
@@ -30,19 +39,29 @@ export default function Navbar() {
 					</h1>
 				</Link>
 
-				<div className="md:flex hidden items-center ml-auto gap-8">
+				<div className="md:flex hidden items-center ml-auto gap-6">
 					{NAVBAR_PAGES.map((item, index) => (
 						<Link
 							className="text-green-900 font-semibold hover:text-green-700 transition-colors"
 							key={index}
-							href={`/${locale}${item.href}`}
+							href={item.href}
 						>
-							{item.page}
+							{t(item.page)}
 						</Link>
 					))}
-					<Link href={`/${locale}/contact`}>
+
+					{/* Single Button Language Switcher Desktop */}
+					<button
+						onClick={toggleLanguage}
+						className="flex items-center gap-2 px-4 py-2 rounded-full border border-neutral-200 text-sm font-bold text-green-900 hover:bg-neutral-50 hover:border-green-900 transition-all active:scale-95 ml-2"
+					>
+						<Globe className="w-4 h-4" />
+						{locale === "en" ? "EN" : "ES"}
+					</button>
+
+					<Link href="/contact">
 						<button className="px-6 text-white hover:bg-green-800 font-semibold py-2.5 rounded-full bg-green-900 transition-all shadow-sm active:scale-95">
-							Contact Us
+							{t("Navigation.contact")}
 						</button>
 					</Link>
 				</div>
@@ -61,20 +80,33 @@ export default function Navbar() {
 							{NAVBAR_PAGES.map((item, index) => (
 								<Link
 									key={index}
-									href={`/${locale}${item.href}`}
+									href={item.href}
 									className="text-xl text-green-900 font-bold border-b border-neutral-50 pb-4"
 									onClick={() => setIsOpen(false)}
 								>
-									{item.page}
+									{t(item.page)}
 								</Link>
 							))}
+							
+							{/* Single Button Language Switcher Mobile */}
+							<button
+								onClick={() => {
+									toggleLanguage();
+									setIsOpen(false);
+								}}
+								className="flex items-center justify-center gap-2 w-full py-3 rounded-xl border border-neutral-200 text-lg font-bold text-green-900 bg-neutral-50 active:bg-neutral-100 transition-all"
+							>
+								<Globe className="w-5 h-5" />
+								{locale === "en" ? "Switch to Español" : "Cambiar a English"}
+							</button>
+
 							<Link
-								href={`/${locale}/contact`}
+								href="/contact"
 								onClick={() => setIsOpen(false)}
-								className="mt-4"
+								className="mt-2"
 							>
 								<button className="w-full px-4 py-4 rounded-xl bg-green-900 text-white text-lg font-bold shadow-md">
-									Contact Us
+									{t("Navigation.contact")}
 								</button>
 							</Link>
 						</div>
