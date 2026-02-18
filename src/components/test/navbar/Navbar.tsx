@@ -33,8 +33,7 @@ export default function Navbar() {
 					))}
 					<Link href={"/ContactUs"}>
 						<button className="px-4 hover:bg-green-800 font-semibold py-2 rounded-md bg-green-900">
-							{" "}
-							Contact Us{" "}
+							Contact Us
 						</button>
 					</Link>
 				</div>
