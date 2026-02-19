@@ -6,12 +6,14 @@ const TechSpec = () => {
 
     return (
         <main className="w-full max-w-7xl mx-auto px-4 md:px-6">
-            <div className="md:grid grid-cols-2 gap-15 relative">
+            <div className="md:grid grid-cols-2 gap-15 relative mb-15">
                 <div className="col-span-2 text-center grid gap-4 justify-center">
                     <h3 className="text-[#c49f4f] text-xl">
                         {t(SPEC_CONTENT.header.header)}
                     </h3>
-                    <h1 className="text-5xl">{t(SPEC_CONTENT.header.title)}</h1>
+                    <h1 className="text-5xl font-serif font-bold">
+                        {t(SPEC_CONTENT.header.title)}
+                    </h1>
                     <p className="text-2xl max-w-180 text-gray-400">
                         {t(SPEC_CONTENT.header.desc)}
                     </p>
@@ -45,14 +47,13 @@ const TechSpec = () => {
                             className={`p-4 bg-gray-50 flex flex-col rounded-2xl border-l-5 ${Box.borderColor}`}
                         >
                             <h1 className="text-xl">{t(Box.title)}</h1>{" "}
-                            <p className="text-[17px] text-gray-400 max-w-55">
+                            <p className="text-[17px] text-gray-400 max-w-60">
                                 {t(Box.desc)}
                             </p>
                         </div>
                     ))}
                 </div>
             </div>
-            ;
         </main>
     );
 };

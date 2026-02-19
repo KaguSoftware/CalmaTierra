@@ -10,7 +10,7 @@ const ProductsHero = () => {
         <main className="w-full max-w-7xl  relative mx-auto px-4 md:px-6">
             <div className="grid grid-cols-2 gap-7 md:mb-15 md:my-0 my-15 ">
                 <div className="flex flex-col gap-5 md:col-span-1 col-span-2 relative justify-center ">
-                    <h1 className="md:text-6xl text-[43px]">
+                    <h1 className="md:text-6xl text-[43px] font-serif font-bold">
                         {t(HERO_CONTENT.title)}
                     </h1>
                     <p className="md:text-xl text-md text-gray-400">

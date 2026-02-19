@@ -109,6 +109,36 @@
                     }
                 }
             }
+        },
+        "Log": {
+            "header": {
+                "header": "GLOBAL LOGISTICS",
+                "title": "Flexible Packaging Solutions",
+                "desc": "Whether you are a local distributor or a large-scale agricultural cooperative, CalmaTierra adapts to your infrastructure. We manage the entire supply chain from production plant to your port of discharge."
+            },
+            "reach": {
+                "header": "Global Reach",
+                "desc": "Exporting to over 25 countries across South America, Africa, and Southeast Asia."
+            },
+            "Box": {
+                "1": {
+                    "title": "50kg Polypropylene Bags",
+                    "desc": "Standard woven bags with PE liner. Easy manual handling for retail distribution."
+                },
+                "2": {
+                    "title": "1,000kg Jumbo Bags (FIBC)",
+                    "desc": "Big Bags with discharge spout. Optimized for forklift handling and medium-scale storage."
+                },
+                "3": {
+                    "title": "Bulk Vessel Shipment",
+                    "desc": "Direct loose bulk loading into vessel holds. Highest efficiency for large volume orders (5,000MT+)."
+                }
+            },
+            "ready": {
+                "Q": "Ready to order?",
+                "get": "Get a quote for your next shipment.",
+                "contact": "Contact Us"
+            }
         }
     }
 }
