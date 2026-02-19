@@ -32,6 +32,22 @@
             "lable": "Contact Us"
         }
     },
+    "AboutUs": {
+        "badge": "ABOUT US",
+        "heading": "Empowering Global\nAgriculture",
+        "description": "At CalmaTierra, we understand that agriculture is the backbone of civilization. Based in the strategic hub of Marbella, Spain, we operate as a vital link in the global supply chain, ensuring that high-quality fertilizers reach farmers and distributors efficiently and reliably.",
+        "cta": "Learn more about our mission",
+        "features": [
+            {
+                "title": "Direct access to reliable refineries",
+                "description": "We cut out unnecessary intermediaries to provide competitive pricing and guaranteed quality."
+            },
+            {
+                "title": "Profound market knowledge",
+                "description": "Decades of combined experience navigating the volatile fertilizer commodity landscape."
+            }
+        ]
+    },
     "Navigation": {
         "home": "Home",
         "about": "About Us",
@@ -85,6 +101,66 @@
                     "title": "Versatile Application",
                     "desc": "Suitable for soil application, fertigation, and foliar sprays."
                 }
+            }
+        },
+        "Forms": {
+            "title": "Product Forms",
+            "desc": "Choose the physical structure that matches your application equipment and needs.",
+            "cards": {
+                "1": {
+                    "title": "Prilled Urea",
+                    "desc": {
+                        "tag": "Fast Acting",
+                        "size": "1.0mm - 2.4mm",
+                        "desc": "Smaller, smoother particles produced by spraying molten urea down a prilling tower. Ideal for industrial use and rapid soil integration."
+                    },
+                    "List": {
+                        "listItem1": "Harder surface finish",
+                        "listItem2": "Faster dissolution rate"
+                    }
+                },
+                "2": {
+                    "title": "Granular Urea",
+                    "desc": {
+                        "tag": "High Durability",
+                        "size": "2.0mm - 4.0mm",
+                        "desc": "Larger particles created through granulation. Superior hardness makes it resistant to crushing and dust formation during transport and blending."
+                    },
+                    "List": {
+                        "listItem1": "Ideal for bulk blending (NPK)",
+                        "listItem2": "Better for mechanical spreading"
+                    }
+                }
+            }
+        },
+        "Log": {
+            "header": {
+                "header": "GLOBAL LOGISTICS",
+                "title": "Flexible Packaging Solutions",
+                "desc": "Whether you are a local distributor or a large-scale agricultural cooperative, CalmaTierra adapts to your infrastructure. We manage the entire supply chain from production plant to your port of discharge."
+            },
+            "reach": {
+                "header": "Global Reach",
+                "desc": "Exporting to over 25 countries across South America, Africa, and Southeast Asia."
+            },
+            "Box": {
+                "1": {
+                    "title": "50kg Polypropylene Bags",
+                    "desc": "Standard woven bags with PE liner. Easy manual handling for retail distribution."
+                },
+                "2": {
+                    "title": "1,000kg Jumbo Bags (FIBC)",
+                    "desc": "Big Bags with discharge spout. Optimized for forklift handling and medium-scale storage."
+                },
+                "3": {
+                    "title": "Bulk Vessel Shipment",
+                    "desc": "Direct loose bulk loading into vessel holds. Highest efficiency for large volume orders (5,000MT+)."
+                }
+            },
+            "ready": {
+                "Q": "Ready to order?",
+                "get": "Get a quote for your next shipment.",
+                "contact": "Contact Us"
             }
         }
     }

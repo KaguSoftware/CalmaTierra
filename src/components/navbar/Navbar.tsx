@@ -14,7 +14,7 @@ export default function Navbar() {
 	const router = useRouter();
 	const params = useParams();
 	const locale = params.locale as string;
-    
+
 	// Lock body scroll when menu is open
 	useEffect(() => {
 		if (isOpen) {
