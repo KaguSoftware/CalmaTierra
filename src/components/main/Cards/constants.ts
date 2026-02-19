@@ -12,7 +12,7 @@ export const CARD_FEATURES = [
         title: "cardMain.cardTwo.title",
         desc: "cardMain.cardTwo.desc",
         Icon: ShieldCheck,
-        accent: "#2f5d44",
+        accent: "#b68b2d",
         iconColor: "#b68b2d",
     },
     {

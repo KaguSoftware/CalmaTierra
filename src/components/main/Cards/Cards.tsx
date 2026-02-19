@@ -10,14 +10,14 @@ export default function Cards() {
       <div className="mx-auto w-full max-w-6xl px-6">
         {/* this is header part */}
         <div className="text-center">
-          <h2 className="">
-            {t("CardMain.title")}
+          <h2 className="italic font-semibold text-3xl">
+            {t("cardMain.title")}
           </h2>
           <div className="mx-auto mt-3 h-0.75 w-28 rounded-full bg-[#b68b2d]"></div>
         </div>
 
         {/* cards section */}
-        <div className="grid grid-cols-3 gap-6 px-2 mt-12">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 mt-12">
           {CARD_FEATURES.map(({ title, desc, Icon, accent, iconColor }) => (
             <div
               key={title}

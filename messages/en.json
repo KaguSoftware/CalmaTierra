@@ -11,6 +11,7 @@
         }
     },
     "cardMain": {
+        "title": "Why Choose CalmaTierra",
         "cardOne": {
             "title": "Global Logistics",
             "desc": "Seamless coordination of sea and land freight to ensure your fertilizer arrives on time, anywhere in the world."
@@ -22,6 +23,13 @@
         "cardThree": {
             "title": "Long-term Partnership",
             "desc": "We build relationships that last generations. Your growth and stability are the measures of our success."
+        }
+    },
+    "ContactUsMain": {
+        "header": "Ready to secure your supply?",
+        "subheader": "Contact our sales team in Marbella for a customized quote tailored to your agricultural needs.",
+        "button": {
+            "lable": "Contact Us"
         }
     },
     "Navigation": {
