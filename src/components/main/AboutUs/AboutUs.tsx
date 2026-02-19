@@ -35,10 +35,16 @@ export default function AboutUs() {
                                 const Icon = ABOUT_US_FEATURES[idx]?.Icon;
 
                                 return (
-                                    <div key={text.title} className="flex gap-4">
+                                    <div
+                                        key={text.title}
+                                        className="flex gap-4"
+                                    >
                                         <div className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-900">
                                             {Icon ? (
-                                                <Icon className="h-5 w-5 text-white" aria-hidden="true" />
+                                                <Icon
+                                                    className="h-5 w-5 text-white"
+                                                    aria-hidden="true"
+                                                />
                                             ) : null}
                                         </div>
 
@@ -70,8 +76,8 @@ export default function AboutUs() {
                     </div>
 
                     {/* Right */}
-                    <div className="relative">
-                        <div className="absolute -right-5 -top-5 hidden h-full w-full rounded-md border-2 border-[#BFA05A] lg:block" />
+                    <div className="relative md:p-0 p-3 ">
+                        <div className="absolute -right-2 md:-right-1 p-3  md:-top-5 -top-1  md:h-full h-[95%] md:w-full w-[95%] rounded-md border-2 border-[#BFA05A] " />
 
                         <div className="relative overflow-hidden rounded-md shadow-2xl bg-slate-100">
                             <div className="relative aspect-4/3 w-full">
@@ -81,7 +87,6 @@ export default function AboutUs() {
                                     className="object-cover"
                                     height={1000}
                                     width={1000}
-                                    priority
                                 />
                             </div>
                         </div>
