@@ -11,7 +11,7 @@
         }
     },
     "CardMain": {
-        "title": "Why Choose Us",
+        "title": "Why Choose CalmaTierra",
         "cardOne": {
             "title": "Global Logistics",
             "desc": "Seamless coordination of sea and land freight to ensure your fertilizer arrives on time, anywhere in the world."
@@ -24,6 +24,29 @@
             "title": "Long-term Partnership",
             "desc": "We build relationships that last generations. Your growth and stability are the measures of our success."
         }
+    },
+    "ContactUsMain": {
+        "header": "Ready to secure your supply?",
+        "subheader": "Contact our sales team in Marbella for a customized quote tailored to your agricultural needs.",
+        "button": {
+            "lable": "Contact Us"
+        }
+    },
+    "AboutUs": {
+        "badge": "ABOUT US",
+        "heading": "Empowering Global\nAgriculture",
+        "description": "At CalmaTierra, we understand that agriculture is the backbone of civilization. Based in the strategic hub of Marbella, Spain, we operate as a vital link in the global supply chain, ensuring that high-quality fertilizers reach farmers and distributors efficiently and reliably.",
+        "cta": "Learn more about our mission",
+        "features": [
+            {
+                "title": "Direct access to reliable refineries",
+                "description": "We cut out unnecessary intermediaries to provide competitive pricing and guaranteed quality."
+            },
+            {
+                "title": "Profound market knowledge",
+                "description": "Decades of combined experience navigating the volatile fertilizer commodity landscape."
+            }
+        ]
     },
     "Navigation": {
         "home": "Home",
