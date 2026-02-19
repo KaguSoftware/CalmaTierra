@@ -1,30 +1,40 @@
-import { DotIcon } from "lucide-react";
+import { CircleDot, CircleIcon, DotIcon } from "lucide-react";
 import { FormsContent } from "./types";
 export const FORMS_CONTENT: FormsContent = {
-    title: "sdgsdfgsdf",
-    desc: "sdgfsdgrgedfijsdilsjflisjeflskdmjf",
+    title: "Products.Forms.title",
+    desc: "Products.Forms.desc",
     cards: [
         {
-            img: { src: "/kagulogo.JPG", alt: "ghj" },
-            title: "ghj",
+            img: { src: "/forms.card1.png", alt: "ghj" },
+            title: "Products.Forms.cards.1.title",
             desc: {
-                tag: "gh",
-                size: "jgh",
-                desc: "jhgghvcmhgcjhtdhgcjdjcjrrd",
+                tagTextColor: "text-green-800",
+                tagBgColor: "bg-green-900/20",
+                tag: "Products.Forms.cards.1.desc.tag",
+                size: "Products.Forms.cards.1.desc.size",
+                desc: "Products.Forms.cards.1.desc.desc",
             },
-            List: ["fsef", "sdf"],
-            icon: DotIcon,
+            List: [
+                "Products.Forms.cards.1.List.listItem1",
+                "Products.Forms.cards.1.List.listItem2",
+            ],
+            icon: CircleIcon,
         },
         {
-            img: { src: "/kagulogo.JPG", alt: "sdf" },
-            title: "fsd",
+            img: { src: "/forms.card2.png", alt: "ghj" },
+            title: "Products.Forms.cards.2.title",
             desc: {
-                tag: "dfs",
-                size: "fsd",
-                desc: "sdferwetwerwsdwerwertwsdqwer",
+                tagTextColor: "text-orange-800",
+                tagBgColor: "bg-[#fef6e5]",
+                tag: "Products.Forms.cards.2.desc.tag",
+                size: "Products.Forms.cards.2.desc.size",
+                desc: "Products.Forms.cards.2.desc.desc",
             },
-            List: ["fsd", "fsd"],
-            icon: DotIcon,
+            List: [
+                "Products.Forms.cards.2.List.listItem1",
+                "Products.Forms.cards.2.List.listItem2",
+            ],
+            icon: CircleIcon,
         },
     ],
 };
