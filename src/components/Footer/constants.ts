@@ -1,22 +1,41 @@
-import { FooterBrand, FooterContactItem } from "./types";
+import { Mail, MapPin, Phone } from "lucide-react";
+import type { FooterBrand, FooterContactItem, FooterContents } from "./types";
 
-export const FOOTER_CONTENT: FooterBrand = {
+export const FOOTER_BRAND: FooterBrand = {
     name: "Footer.name",
     description: "Footer.description",
-    logoSrc: "/CalmaTierraLogo.jpeg"
+    image: {
+        src: "/CalmaTierraLogo.jpeg",
+        alt: "CalmaTierra Logo"
+    },
 };
 
-export const FOOTER_CONTENT: FooterContactItem[] = [
+export const FOOTER_CONTACTS: FooterContactItem[] = [
     {
-        label: "Footer.location.label",
-        value: "Footer.location.value",
-        href: "https://maps.google.com/?q=Marbella%2C%20Spain"
-
+        label: "Footer.location",
+        Icon: MapPin
     },
     {
-
+        label: "Footer.email",
+        Icon: Mail
     },
     {
-        ""
+        label: "Footer.phone",
+        Icon: Phone
     },
 ];
+
+export const FOOTER_CONTENTS: FooterContents = {
+    year: "Footer.year",
+    bottomText: "Footer.text",
+    bottomLinks: [
+        {
+            label: "Footer.link.labelOne",
+            href: "/privacy"
+        },
+        {
+            label: "Footer.link.labelTwo",
+            href: "/terms"
+        },
+    ],
+};
