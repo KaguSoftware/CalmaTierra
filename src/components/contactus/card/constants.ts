@@ -1,8 +1,9 @@
 import { InfoGrid, Header, Carousel, ContactForm } from "./types";
+import { Mail, Phone, Computer, HomeIcon } from "lucide-react";
 
 export const HEADERCONTENT: Header = {
-    title: "Contact.Header.title",
-    desc: "Contact.Header.desc",
+    title: "Our Headquarters",
+    desc: "Located in the heart of Spain's agricultural innovation hub, our Marbella office manages our international logistics and client relations. We are open Monday through Friday, 9:00 AM to 6:00 PM CET.",
 };
 
 export const CAROUSELCONTENT: Carousel = {
@@ -11,12 +12,22 @@ export const CAROUSELCONTENT: Carousel = {
 
 export const GRIDCONTENT: InfoGrid[] = [
     {
-        title: "Contact.Grid.Location.title",
-        desc: "Contact.Grid.Location.desc",
+        title: "Office Address",
+        desc: "Calle de la Agricultura, 45 Polígono Industrial Nueva Andalucía 29660 Marbella, Málaga, Spain",
+        icon: HomeIcon
     },
-    { title: "Contact.Grid.Social.title", desc: "Contact.Grid.Social.desc" },
-    { title: "Contact.Grid.Email.title", desc: "Contact.Grid.Email.desc" },
-    { title: "Contact.Grid.Contact.title", desc: "Contact.Grid.Contact.desc" },
+    {
+        title: "Email Us", desc: "info@calmatierra.com",
+        icon: Mail
+    },
+    {
+        title: "Website", desc: "www.calmatierra.com",
+        icon: Computer
+    },
+    {
+        title: "Phone", desc: "+34 952 00 00 00",
+        icon: Phone
+    },
 ];
 
 // NEW: The Form Configuration

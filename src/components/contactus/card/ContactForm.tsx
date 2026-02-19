@@ -48,12 +48,9 @@ const FIELDS_CONFIG = [
         fullWidth: true,
     },
 ] as const;
-
 const ContactForm = () => {
     const t = useTranslations();
-
     const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
-
     const {
         register,
         handleSubmit,
@@ -70,7 +67,6 @@ const ContactForm = () => {
             message: "",
         },
     });
-
     const onSubmit = async (data: ContactFormValues) => {
         const result = await sendContactEmail(data);
         if (result?.success) {
@@ -82,37 +78,39 @@ const ContactForm = () => {
             setTimeout(() => setStatus("idle"), 5000);
         }
     };
-
     return (
         <div className="w-full grid grid-cols-2 lg:grid-cols-2 gap-12 items-start">
             <div>
-                <div className="flex flex-col justify-between h-full text-white">
+                <div className="flex flex-col justify-between h-full text-green-900">
                     {/* Main Header */}
                     <div className="space-y-4">
                         <h1 className="font-black text-5xl md:text-6xl">
                             {t(HEADERCONTENT.title)}
                         </h1>
-                        <p className="text-neutral-300 max-w-lg text-lg">
+                        <p className="text-gray-600 max-w-150 text-lg">
                             {t(HEADERCONTENT.desc)}
                         </p>
                     </div>
-
                     {/* Info Grid */}
                     <div className="grid grid-cols-2 gap-8 mt-10">
-                        {GRIDCONTENT.map((item, index) => (
-                            <div key={index} className="flex flex-col gap-2 ">
-                                <h3 className="text-xl font-bold">
-                                    {t(item.title)}
-                                </h3>
-                                <p className="text-neutral-400 text-sm">
-                                    {t(item.desc)}
-                                </p>
-                            </div>
-                        ))}
+                        {GRIDCONTENT.map((item, index) => {
+                            const Icon = item.icon;
+                            return (
+                                <div key={index} className="flex flex-col gap-2 ">
+                                    <div className="flex gap-4 ">
+                                        <Icon className="text-[#c49f4f] mt-1" size={18} />
+                                        <h3 className="text-xl font-bold">
+                                            {t(item.title)}
+                                        </h3>
+                                    </div>
+                                    <p className="text-neutral-400 ">
+                                        {t(item.desc)}
+                                    </p>
+                                </div>);
+                        })}
                     </div>
                 </div>
             </div>
-
             <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-neutral-100 h-fit w-full overflow-hidden relative">
                 <AnimatePresence mode="wait">
                     {status === "success" ? (
@@ -175,7 +173,6 @@ const ContactForm = () => {
         </div>
     );
 };
-
 // Sub-components
 const FormHeader = () => (
     <div className="mb-6">
@@ -187,7 +184,6 @@ const FormHeader = () => (
         </p>
     </div>
 );
-
 const SuccessState = () => (
     <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
@@ -199,7 +195,6 @@ const SuccessState = () => (
         <p className="text-sm text-neutral-600">Thank you for reaching out.</p>
     </motion.div>
 );
-
 const Field = ({
     label,
     name,
@@ -216,9 +211,8 @@ const Field = ({
 
     return (
         <div
-            className={`flex flex-col gap-1.5 ${
-                fullWidth ? "md:col-span-2" : ""
-            }`}
+            className={`flex flex-col gap-1.5 ${fullWidth ? "md:col-span-2" : ""
+                }`}
         >
             <label className="text-sm font-semibold text-neutral-700">
                 {label}
@@ -254,7 +248,6 @@ const Field = ({
         </div>
     );
 };
-
 const ErrorMessage = ({ message }: { message?: string }) => (
     <span className="text-red-500 text-[10px] font-medium ml-1">{message}</span>
 );
@@ -274,5 +267,4 @@ const SubmitButton = ({ isSubmitting }: { isSubmitting: boolean }) => (
         )}
     </button>
 );
-
 export default ContactForm;
