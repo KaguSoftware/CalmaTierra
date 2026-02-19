@@ -29,7 +29,7 @@ export const SPEC_CONTENT: specContent = {
         {
             title: "Products.Spec.box.2.title",
             desc: "Products.Spec.box.2.desc",
-            borderColor: "border-yellow-300",
+            borderColor: "border-[#c49f4f]",
         },
     ],
 };
