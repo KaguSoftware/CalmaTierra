@@ -92,7 +92,7 @@ const ContactForm = () => {
                         </p>
                     </div>
                     {/* Info Grid */}
-                    <div className="grid grid-cols-2 gap-8 mt-10">
+                    <div className="grid grid-cols-1 gap-8 mt-10">
                         {GRIDCONTENT.map((item, index) => {
                             const Icon = item.icon;
                             return (
