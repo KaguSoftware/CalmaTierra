@@ -29,10 +29,10 @@ const TechSpec = () => {
                         </div>
                     ))}
                 </div>
-                <div className=" absolute right-158 top-55 rotate-15 rounded-full py-8 px-4 text-2xl text-white bg-[#c49f4f] max-w-fit">
+                <div className=" absolute md:right-158 right-0 top-63 rotate-15 rounded-full md:py-8 py-7.5 px-4 text-xl md:text-2xl text-white bg-[#c49f4f] max-w-fit">
                     46%N
                 </div>
-                <div className="grid grid-cols-2 gap-6 ">
+                <div className="grid grid-cols-2 gap-6 md:text-start text-center">
                     <div className="col-span-2 grid gap-5">
                         <h1 className="text-[30px] font-[550]">
                             {t(SPEC_CONTENT.desc.header)}

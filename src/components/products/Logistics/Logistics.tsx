@@ -9,7 +9,7 @@ const Logistics = () => {
     return (
         <>
             <div className="w-full max-w-7xl  relative mx-auto px-4 md:px-6">
-                <div className="grid grid-cols-2 my-15">
+                <div className="md:grid grid-cols-2 my-15">
                     <div className="flex flex-col gap-9  ">
                         <div className="grid gap-4">
                             <h2 className="text-[#c49f4f] text-lg">
@@ -37,7 +37,7 @@ const Logistics = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="rounded-2xl relative shadow-2xl">
+                    <div className="rounded-2xl relative shadow-2xl md:mt-0 mt-10">
                         <Image
                             src={LOGISTICS_CONTENT.img.src}
                             alt={LOGISTICS_CONTENT.img.alt}
@@ -45,8 +45,8 @@ const Logistics = () => {
                             height={512}
                             className="rounded-2xl w-full h-full"
                         />
-                        <div className="bg-gray-300 w-full h-full absolute top-0 rounded-2xl rotate-2 -z-10"></div>
-                        <div className="bg-amber-200 w-full h-full absolute top-0 rounded-2xl -rotate-2 -z-10"></div>
+                        <span className="bg-gray-300 w-full h-full absolute top-0 rounded-2xl rotate-2 -z-10"></span>
+                        <span className="bg-amber-200 w-full h-full absolute top-0 rounded-2xl -rotate-2 -z-10"></span>
                         <div className="absolute bg-white -bottom-4 -left-6 shadow-2xl grid rounded-2xl p-6 justify-self-center">
                             <div className="flex gap-2">
                                 <LOGISTICS_CONTENT.reach.icon className="text-[#c49f4f]" />
@@ -61,8 +61,8 @@ const Logistics = () => {
                     </div>
                 </div>
             </div>
-            <div className=" bg-green-900 w-12xl py-15">
-                <div className="w-full max-w-7xl grid grid-cols-2 justify-between relative mx-auto px-4 md:px-6">
+            <div className=" bg-green-900 w-12xl md:py-15 py-10">
+                <div className="w-full max-w-7xl md:grid grid-cols-2 justify-between relative mx-auto px-4 md:px-6">
                     <div className="font-bold text-3xl font-serif">
                         <h1 className="text-white ">
                             {t(LOGISTICS_CONTENT.ready.Q)}
@@ -71,7 +71,7 @@ const Logistics = () => {
                             {t(LOGISTICS_CONTENT.ready.get)}
                         </h2>
                     </div>
-                    <div className="  flex place-content-end">
+                    <div className="  flex md:place-content-end place-content-center mt-5">
                         <Link
                             className="p-3 px-7 bg-amber-100 rounded-lg text-green-800 place-self-end"
                             href={"#"}

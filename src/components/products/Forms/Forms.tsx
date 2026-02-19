@@ -6,13 +6,13 @@ const Forms = () => {
     const t = useTranslations();
 
     return (
-        <main className=" bg-gray-100 w-10xl">
-            <div className="grid grid-cols-2 gap-10 w-full max-w-7xl mx-auto px-4  md:px-6">
+        <main className=" bg-gray-100 p-1 w-10xl">
+            <div className="md:grid grid-cols-2 gap-10 w-full max-w-7xl mx-auto px-4  md:px-6">
                 <div className="col-span-2 text-center mt-15 grid gap-3">
                     <h1 className="text-4xl font-bold font-serif">
                         {t(FORMS_CONTENT.title)}
                     </h1>
-                    <p className="text-lg text-neutral-400">
+                    <p className="text-lg text-neutral-400 md:mb-0 mb-4">
                         {t(FORMS_CONTENT.desc)}
                     </p>
                 </div>
