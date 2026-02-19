@@ -150,13 +150,44 @@ const FormHeader = () => (
 
 const SuccessState = () => (
 	<motion.div
-		initial={{ opacity: 0, scale: 0.95 }}
+		initial={{ opacity: 0, scale: 0.9 }}
 		animate={{ opacity: 1, scale: 1 }}
-		className="flex flex-col items-center justify-center text-center py-10"
+		exit={{ opacity: 0, scale: 0.9 }}
+		transition={{ duration: 0.4, ease: "easeOut" }}
+		className="flex flex-col items-center justify-center text-center py-12 h-full"
 	>
-		<CheckCircle2 className="w-12 h-12 text-[#3c5b45] mb-4" />
-		<h3 className="text-xl font-bold text-[#3c5b45] mb-2">Message Sent!</h3>
-		<p className="text-sm text-neutral-600">Thank you for reaching out.</p>
+		<motion.div
+			initial={{ scale: 0, rotate: -180 }}
+			animate={{ scale: 1, rotate: 0 }}
+			transition={{
+				type: "spring",
+				stiffness: 260,
+				damping: 20,
+				delay: 0.1,
+			}}
+			className="w-20 h-20 bg-[#e8f5e9] rounded-full flex items-center justify-center mb-6 shadow-sm"
+		>
+			<CheckCircle2
+				className="w-10 h-10 text-[#3c5b45]"
+				strokeWidth={3}
+			/>
+		</motion.div>
+		<motion.h3
+			initial={{ opacity: 0, y: 10 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ delay: 0.3, duration: 0.4 }}
+			className="text-2xl font-serif font-bold text-[#3c5b45] mb-2"
+		>
+			Message Sent!
+		</motion.h3>
+		<motion.p
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ delay: 0.5, duration: 0.4 }}
+			className="text-neutral-600 max-w-[280px]"
+		>
+			Thank you for reaching out. We will get back to you within 24 hours.
+		</motion.p>
 	</motion.div>
 );
 

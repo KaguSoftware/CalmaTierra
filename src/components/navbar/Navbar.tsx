@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { LucideMenu, X, Globe } from "lucide-react";
 import Image from "next/image";
 import { NAVBAR_PAGES } from "./constants";
@@ -14,6 +14,26 @@ export default function Navbar() {
 	const router = useRouter();
 	const params = useParams();
 	const locale = params.locale as string;
+    
+	// Lock body scroll when menu is open
+	useEffect(() => {
+		if (isOpen) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "auto";
+		}
+		return () => {
+			document.body.style.overflow = "auto";
+		};
+	}, [isOpen]);
+
+	// Close menu on route change
+	useEffect(() => {
+		if (isOpen) {
+			// eslint-disable-next-line react-hooks/set-state-in-effect
+			setIsOpen(false);
+		}
+	}, [pathname, isOpen]);
 
 	const toggleMenu = () => setIsOpen((prev) => !prev);
 
@@ -24,7 +44,11 @@ export default function Navbar() {
 
 	return (
 		<div className="h-20">
-			<nav className="w-full h-20 z-[9999] flex items-center gap-8 md:px-10 px-4 bg-white/90 backdrop-blur-lg fixed top-0 left-0 border-b border-neutral-100">
+			<nav
+				className={`w-full h-20 z-[9999] flex items-center gap-8 md:px-10 px-4 fixed top-0 left-0 border-b border-neutral-100 transition-colors duration-200 ${
+					isOpen ? "bg-white" : "bg-white/90 backdrop-blur-lg"
+				}`}
+			>
 				<Link className="flex items-center gap-3" href="/">
 					<div className="relative w-10 h-10 overflow-hidden rounded-full border border-green-900/10">
 						<Image
@@ -75,8 +99,8 @@ export default function Navbar() {
 
 				{/* Mobile Menu */}
 				{isOpen && (
-					<div className="md:hidden fixed inset-x-0 top-20 bottom-0 bg-white/100 animate-in fade-in slide-in-from-top-2 duration-200">
-						<div className="flex flex-col gap-6 px-6 py-8 border-t border-neutral-100">
+					<div className="md:hidden fixed inset-x-0 top-20 bottom-0 bg-white z-[9998]">
+						<div className="flex flex-col gap-6 px-6 py-8 border-t border-neutral-100 h-full overflow-y-auto">
 							{NAVBAR_PAGES.map((item, index) => (
 								<Link
 									key={index}
