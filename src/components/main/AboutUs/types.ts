@@ -1,22 +1,18 @@
-import type { ComponentType, SVGProps } from "react";
+import type { LucideIcon } from "lucide-react";
 
-export type AboutFeature = {
+export interface AboutFeatureText {
     title: string;
     description: string;
-    Icon: ComponentType<SVGProps<SVGSVGElement>>;
-};
+}
 
-export type AboutUsContent = {
-    badge: string;
-    heading: string; // you can include \n for line breaks
-    description: string;
-    features: AboutFeature[];
-    cta: {
-        label: string;
-        href: string;
-    };
-    image: {
-        src: string;
-        alt: string;
-    };
-};
+export interface AboutFeature {
+    Icon: LucideIcon;
+}
+
+export interface AboutUsKeys {
+    badge: "badge";
+    heading: "heading";
+    description: "description";
+    ctaLabel: "cta";
+    features: "features";
+}

@@ -1,71 +1,93 @@
-import { Factory, ChartCandlestick } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { ABOUT_US_ASSETS, ABOUT_US_FEATURES, ABOUT_US_KEYS } from "./constants";
+import type { AboutFeatureText } from "./types";
 
-export default function About() {
+export default function AboutUs() {
+    const t = useTranslations("AboutUs");
+    const featureText = t.raw(ABOUT_US_KEYS.features) as AboutFeatureText[];
+
     return (
-        <main className="bg-white">
-            <div className="mx-auto max-w-6xl px-6 py-20">
-                <div className="grid items-center gap-14 lg:grid-cols-2">
+        <section className="bg-white py-16 sm:py-20">
+            <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+                    {/* Left */}
                     <div>
-                        <span className="rounded-full border border-[#bfa15a3f] bg-[#e0d4b452] px-2 py-2 text-sm font-bold text-[#BFA05A]">
-                            ABOUT US
-                        </span>
+                        {/* Pill */}
+                        <div className="inline-flex rounded-full border border-[#bfa15a3f] bg-[#e0d4b452] px-2 py-1.5 text-sm font-semibold text-[#BFA05A]">
+                            {t(ABOUT_US_KEYS.badge)}
+                        </div>
 
-                        <h2 className="mt-6 text-5xl font-bold text-emerald-900">
-                            Empowering Global <br /> Agriculture
+                        {/* Heading */}
+                        <h2 className="mt-5 whitespace-pre-line text-4xl font-semibold leading-tight text-emerald-900 sm:text-5xl">
+                            {t(ABOUT_US_KEYS.heading)}
                         </h2>
 
-                        <p className="mt-6 text-lg text-gray-800 text-justify">
-                            At CalmaTierra, we understand that agriculture is the backbone of civilization. Based in the strategic hub of Marbella, Spain, we operate as a vital link in the global supply chain, ensuring that high-quality fertilizers reach farmers and distributors efficiently and reliably.
+                        {/* Description */}
+                        <p className="mt-5 max-w-prose text-base leading-7 text-slate-600 sm:text-[17px]">
+                            {t(ABOUT_US_KEYS.description)}
                         </p>
 
-                        <div className="mt-10 space-y-6">
-                            <div className="flex gap-4">
-                                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-900 text-white">
-                                    <Factory className="h-6 w-6" />
-                                </div>
-                                <div>
-                                    <p className="font-semibold text-slate-900">
-                                        Direct access to reliable refineries
-                                    </p>
-                                    <p className="mt-1 text-sm text-gray-600">
-                                        We cut out unnecessary intermediaries to provide competitive pricing and guaranteed quality.
-                                    </p>
-                                </div>
-                            </div>
+                        {/* Features */}
+                        <div className="mt-10 space-y-8">
+                            {featureText.map((text, idx) => {
+                                const Icon = ABOUT_US_FEATURES[idx]?.Icon;
 
-                            <div className="flex gap-4">
-                                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-900 text-white">
-                                    <ChartCandlestick className="h-5 w-5" />
-                                </div>
+                                return (
+                                    <div key={text.title} className="flex gap-4">
+                                        <div className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-900">
+                                            {Icon ? (
+                                                <Icon className="h-5 w-5 text-white" aria-hidden="true" />
+                                            ) : null}
+                                        </div>
 
-                                <div>
-                                    <p className="font-bold text-slate-900">
-                                        Profound market knowledge
-                                    </p>
-                                    <p className="mt-1 text-sm text-gray-600">
-                                        Decades of combined experience navigating the volatile fertilizer commodity landscape.
-                                    </p>
-                                </div>
-                            </div>
+                                        <div>
+                                            <h3 className="text-base font-semibold text-slate-900">
+                                                {text.title}
+                                            </h3>
+                                            <p className="mt-1 text-sm leading-6 text-slate-600">
+                                                {text.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+
+                        {/* CTA */}
+                        <div className="mt-10">
+                            <Link
+                                href={ABOUT_US_ASSETS.ctaHref}
+                                className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-900 hover:text-emerald-800"
+                            >
+                                {t(ABOUT_US_KEYS.ctaLabel)}
+                                <span aria-hidden="true" className="text-base">
+                                    →
+                                </span>
+                            </Link>
                         </div>
                     </div>
 
-                    <div className="flex justify-center lg:block">
-                        <div className="relative">
-                            <div className="absolute -right-8 -top-5 hidden h-full w-full rounded-xl border-2 border-[#BFA05A] lg:block" />
+                    {/* Right */}
+                    <div className="relative">
+                        <div className="absolute -right-5 -top-5 hidden h-full w-full rounded-md border-2 border-[#BFA05A] lg:block" />
 
-                            <Image
-                                src="/unnamed.png"
-                                alt="farmer"
-                                width={514}
-                                height={514}
-                                className="relative rounded-xl"
-                            />
+                        <div className="relative overflow-hidden rounded-md shadow-2xl bg-slate-100">
+                            <div className="relative aspect-[4/3] w-full">
+                                <Image
+                                    src={ABOUT_US_ASSETS.imageSrc}
+                                    alt={ABOUT_US_ASSETS.imageAlt}
+                                    className="object-cover"
+                                    height={1000}
+                                    width={1000}
+                                    priority
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
+        </section>
     );
 }
