@@ -8,7 +8,13 @@ export interface FormsContent {
 export interface card {
     img: { src: string; alt: string };
     title: string;
-    desc: { tag: string; size: string; desc: string };
+    desc: {
+        tagTextColor: string;
+        tagBgColor: string;
+        tag: string;
+        size: string;
+        desc: string;
+    };
     List: string[];
     icon: LucideIcon;
 }
