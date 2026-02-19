@@ -74,7 +74,7 @@ export default function AboutUs() {
                         <div className="absolute -right-5 -top-5 hidden h-full w-full rounded-md border-2 border-[#BFA05A] lg:block" />
 
                         <div className="relative overflow-hidden rounded-md shadow-2xl bg-slate-100">
-                            <div className="relative aspect-[4/3] w-full">
+                            <div className="relative aspect-4/3 w-full">
                                 <Image
                                     src={ABOUT_US_ASSETS.imageSrc}
                                     alt={ABOUT_US_ASSETS.imageAlt}
