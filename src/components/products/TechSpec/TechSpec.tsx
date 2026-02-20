@@ -5,7 +5,7 @@ const TechSpec = () => {
     const t = useTranslations();
 
     return (
-        <main className="w-full max-w-7xl mx-auto px-4 md:px-6">
+        <main className="w-full max-w-7xl relative mx-auto px-4 md:px-6">
             <div className="md:grid grid-cols-2 gap-15 relative mb-15">
                 <div className="col-span-2 text-center grid gap-10 justify-center">
                     <h3 className="text-[#c49f4f] text-xl">
@@ -18,7 +18,7 @@ const TechSpec = () => {
                         {t(SPEC_CONTENT.header.desc)}
                     </p>
                 </div>
-                <div className="border flex flex-col p-7 gap-2 border-gray-100 shadow-xl m-3 rounded-2xl">
+                <div className="border flex relative flex-col p-7 gap-2 border-gray-100 shadow-xl m-3 rounded-2xl">
                     <h1 className="text-[30px] text-green-900">
                         {t(SPEC_CONTENT.lcard.title)}
                     </h1>
@@ -28,10 +28,11 @@ const TechSpec = () => {
                             <h1 className="text-lg">{t(list)}</h1>
                         </div>
                     ))}
+                    <div className=" absolute -right-6  -top-10 rotate-15 rounded-full md:py-8 py-7.5 px-4 text-xl md:text-2xl text-white bg-[#c49f4f] max-w-fit">
+                        46%N
+                    </div>
                 </div>
-                <div className=" absolute md:right-158 -right-2 md:top-63 top-75 rotate-15 rounded-full md:py-8 py-7.5 px-4 text-xl md:text-2xl text-white bg-[#c49f4f] max-w-fit">
-                    46%N
-                </div>
+
                 <div className="grid grid-cols-2 gap-6 md:mt-0 mt-15 md:text-start text-center">
                     <div className="col-span-2 grid gap-5">
                         <h1 className="text-[30px] font-[550]">

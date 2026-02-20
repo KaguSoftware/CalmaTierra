@@ -29,7 +29,7 @@ const ProductsHero = () => {
                     <span className="absolute top-0 md:bg-linear-to-r bg-linear-to-b z-10 from-white to-transparent w-full h-full"></span>
                     {/*PARSA plz let me know if this is ugly i might forget to ask  */}
                 </div>
-                <div className="md:flex grid md:col-span-1 col-span-2 gap-5 md:bottom-30 md:absolute text-center text-xl">
+                <div className="md:flex grid md:col-span-1 col-span-2 gap-5 md:bottom-20 md:absolute text-center text-xl">
                     <Link
                         href={HERO_CONTENT.button1.href}
                         className="bg-green-900 p-3 rounded-md text-white hover:bg-green-950"

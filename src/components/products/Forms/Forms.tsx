@@ -6,7 +6,7 @@ const Forms = () => {
     const t = useTranslations();
 
     return (
-        <main className=" bg-gray-100 p-1 w-10xl">
+        <main className=" bg-gray-100 p-1 max-w-10xl">
             <div className="md:grid grid-cols-2 gap-10 w-full max-w-7xl mx-auto px-4  md:px-6">
                 <div className="col-span-2 text-center mt-15 grid gap-3">
                     <h1 className="text-4xl font-bold font-serif">
