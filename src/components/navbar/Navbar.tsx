@@ -50,13 +50,13 @@ export default function Navbar() {
 				<Link className="flex items-center gap-3" href="/">
 					<div className="relative w-10 h-10 overflow-hidden rounded-full border border-green-900/10">
 						<Image
-							src={"/CalmaTierraLogo.jpeg"}
+							src={"/calmatierra icon.png"}
 							fill
 							className="object-cover"
 							alt={"Logo"}
 						/>
 					</div>
-					<h1 className="text-2xl font-bold text-green-900 tracking-tighter italic">
+					<h1 className="text-2xl font-bold text-green-900 tracking-tighter">
 						CalmaTierra
 					</h1>
 				</Link>
