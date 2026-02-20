@@ -10,9 +10,6 @@
 		"subtitle": "Conectando con la naturaleza, paso a paso.",
 		"cta": "Empezar"
 	},
-	"Footer": {
-		"rights": "Todos los derechos reservados."
-	},
 	"HeroMain": {
 		"headerOne": "Un Nombre Confiable en el",
 		"headerTwo": "Mundo de los Fertilizantes",
@@ -39,6 +36,43 @@
 			"desc": "Construimos relaciones que duran generaciones. Su crecimiento y estabilidad son las medidas de nuestro éxito."
 		}
 	},
+	"ContactUsMain": {
+		"header": "¿Listo para asegurar su suministro?",
+		"subheader": "Contacte a nuestro equipo de ventas en Marbella para obtener un presupuesto personalizado adaptado a sus necesidades agrícolas.",
+		"button": {
+			"lable": "Contáctenos"
+		}
+	},
+	"AboutUs": {
+		"badge": "SOBRE NOSOTROS",
+		"heading": "Impulsando la\nAgricultura Global",
+		"description": "En CalmaTierra entendemos que la agricultura es la base de la civilización. Con sede en el centro estratégico de Marbella, España, operamos como un enlace vital en la cadena de suministro global, asegurando que los fertilizantes de alta calidad lleguen a agricultores y distribuidores de forma eficiente y confiable.",
+		"cta": "Conozca más sobre nuestra misión",
+		"features": [
+			{
+				"title": "Acceso directo a refinerías de confianza",
+				"description": "Eliminamos intermediarios innecesarios para ofrecer precios competitivos y calidad garantizada."
+			},
+			{
+				"title": "Profundo conocimiento del mercado",
+				"description": "Décadas de experiencia combinada navegando el volátil panorama de los fertilizantes."
+			}
+		]
+	},
+	"Footer": {
+		"year": "2023",
+		"name": "CalmaTierra",
+		"description": "Conectando las refinerías de fertilizantes más confiables del mundo con los agricultores que alimentan al planeta.",
+		"contactTitle": "Contacto",
+		"location": "Marbella, España",
+		"email": "info@calmatierra.com",
+		"phone": "+34 952 000 000",
+		"text": "Todos los derechos reservados.",
+		"link": {
+			"labelOne": "Política de Privacidad",
+			"labelTwo": "Términos de Servicio"
+		}
+	},
 	"Products": {
 		"hero": {
 			"title": "Fertilizantes de Nitrógeno Premium",
@@ -54,7 +88,7 @@
 			"header": {
 				"header": "ESPECIFICACIONES TÉCNICAS",
 				"title": "¿Qué es Urea 46% Nitrógeno?",
-				"desc": "El fertilizante sólido de nitrógeno más concentrado del mundo, esencial para el crecimiento saludable de las plantas y máxima eficiencia de rendimiento."
+				"desc": "El fertilizante sólido de nitrógeno más concentrado del mundo, esencial para el crecimiento saludable de las plantas y la máxima eficiencia de rendimiento."
 			},
 			"lcard": {
 				"title": "Composición Química",
@@ -72,12 +106,72 @@
 			"box": {
 				"1": {
 					"title": "Rentable",
-					"desc": "Costo más bajo por unidad de nitrógeno en comparación con otros fertilizantes."
+					"desc": "El costo más bajo por unidad de nitrógeno en comparación con otros fertilizantes."
 				},
 				"2": {
 					"title": "Aplicación Versátil",
-					"desc": "Adecuado para aplicación en el suelo, fertirrigación y pulverizaciones foliares."
+					"desc": "Adecuado para aplicación en suelo, fertirrigación y pulverización foliar."
 				}
+			}
+		},
+		"Forms": {
+			"title": "Formas del Producto",
+			"desc": "Elija la estructura física que mejor se adapte a su equipo de aplicación y necesidades.",
+			"cards": {
+				"1": {
+					"title": "Urea Perlada",
+					"desc": {
+						"tag": "Acción Rápida",
+						"size": "1.0mm - 2.4mm",
+						"desc": "Partículas más pequeñas y lisas producidas al rociar urea fundida desde una torre de perlado. Ideal para uso industrial y una rápida integración al suelo."
+					},
+					"List": {
+						"listItem1": "Acabado de superficie más dura",
+						"listItem2": "Mayor velocidad de disolución"
+					}
+				},
+				"2": {
+					"title": "Urea Granulada",
+					"desc": {
+						"tag": "Alta Durabilidad",
+						"size": "2.0mm - 4.0mm",
+						"desc": "Partículas más grandes creadas mediante granulación. Su dureza superior las hace resistentes al aplastamiento y a la formación de polvo durante el transporte y la mezcla."
+					},
+					"List": {
+						"listItem1": "Ideal para mezclas a granel (NPK)",
+						"listItem2": "Mejor para esparcimiento mecánico"
+					}
+				}
+			}
+		},
+		"Log": {
+			"header": {
+				"header": "LOGÍSTICA GLOBAL",
+				"title": "Soluciones de Embalaje Flexibles",
+				"desc": "Ya sea un distribuidor local o una gran cooperativa agrícola, CalmaTierra se adapta a su infraestructura. Gestionamos toda la cadena de suministro desde la planta de producción hasta su puerto de descarga."
+			},
+			"reach": {
+				"header": "Alcance Global",
+				"desc": "Exportando a más de 25 países en América del Sur, África y el Sudeste Asiático."
+			},
+			"Box": {
+				"1": {
+					"title": "Sacos de Polipropileno de 50kg",
+					"desc": "Sacos tejidos estándar con revestimiento de PE. De fácil manejo manual para distribución minorista."
+				},
+				"2": {
+					"title": "Sacos Jumbo de 1.000kg (FIBC)",
+					"desc": "Bolsas grandes con boquilla de descarga. Optimizado para el manejo con montacargas y almacenamiento a mediana escala."
+				},
+				"3": {
+					"title": "Envío de Buques a Granel",
+					"desc": "Carga directa a granel en las bodegas del buque. Máxima eficiencia para pedidos de gran volumen (más de 5.000 TM)."
+				}
+			},
+			"ready": {
+				"Q": "¿Listo para hacer un pedido?",
+				"get": "Obtenga un presupuesto para su próximo envío.",
+				"contact": "Contáctenos"
 			}
 		}
 	}

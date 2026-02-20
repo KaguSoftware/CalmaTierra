@@ -43,19 +43,17 @@ export default function Navbar() {
 	return (
 		<div className="h-20">
 			<nav
-				className={`w-full h-20 z-[9999] flex items-center gap-8 md:px-10 px-4 fixed top-0 left-0 border-b border-neutral-100 transition-colors duration-200 ${
+				className={`w-full h-20 z-9999 flex items-center gap-8 md:px-10 px-4 fixed top-0 left-0 border-b border-neutral-100 transition-colors duration-200 ${
 					isOpen ? "bg-white" : "bg-white/90 backdrop-blur-lg"
 				}`}
 			>
 				<Link className="flex items-center gap-3" href="/">
-					<div className="relative w-10 h-10 overflow-hidden rounded-full border border-green-900/10">
-						<Image
-							src={"/calmatierra icon.png"}
-							fill
-							className="object-cover"
-							alt={"Logo"}
-						/>
-					</div>
+					<Image
+						src={"/calmatierra icon.png"}
+						fill
+						className="object-cover"
+						alt={"Logo"}
+					/>
 					<h1 className="text-2xl font-bold text-green-900 tracking-tighter">
 						CalmaTierra
 					</h1>
@@ -97,7 +95,7 @@ export default function Navbar() {
 
 				{/* Mobile Menu */}
 				{isOpen && (
-					<div className="md:hidden fixed inset-x-0 top-20 bottom-0 bg-white z-[9998]">
+					<div className="md:hidden fixed inset-x-0 top-20 bottom-0 bg-white z-9998">
 						<div className="flex flex-col gap-6 px-6 py-8 border-t border-neutral-100 h-full overflow-y-auto">
 							{NAVBAR_PAGES.map((item, index) => (
 								<Link

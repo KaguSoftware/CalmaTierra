@@ -227,7 +227,7 @@ const SuccessState = () => (
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ delay: 0.5, duration: 0.4 }}
-			className="text-neutral-600 max-w-[280px]"
+			className="text-neutral-600 max-w-70"
 		>
 			Thank you for reaching out. We will get back to you within 24 hours.
 		</motion.p>
