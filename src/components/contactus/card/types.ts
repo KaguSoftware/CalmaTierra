@@ -15,6 +15,7 @@ export interface Carousel {
 export interface InfoGrid {
 	title: string;
 	desc: string;
+	icon: LucideIcon;
 }
 
 export interface ContactForm {
