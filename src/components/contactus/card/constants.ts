@@ -1,9 +1,10 @@
+// src/app/[...]/constants.ts
 import { InfoGrid, Header, Carousel, ContactForm } from "./types";
 import { Mail, Phone, Computer, HomeIcon } from "lucide-react";
 
 export const HEADERCONTENT: Header = {
-    title: "Our Headquarters",
-    desc: "Located in the heart of Spain's agricultural innovation hub, our Marbella office manages our international logistics and client relations. We are open Monday through Friday, 9:00 AM to 6:00 PM CET.",
+    title: "Contact.header.title",
+    desc: "Contact.header.desc",
 };
 
 export const CAROUSELCONTENT: Carousel = {
@@ -12,46 +13,79 @@ export const CAROUSELCONTENT: Carousel = {
 
 export const GRIDCONTENT: InfoGrid[] = [
     {
-        title: "Office Address",
-        desc: "Calle de la Agricultura, 45 Polígono Industrial Nueva Andalucía 29660 Marbella, Málaga, Spain",
-        icon: HomeIcon
+        title: "Contact.grid.office.title",
+        desc: "Contact.grid.office.desc",
+        icon: HomeIcon,
     },
     {
-        title: "Email Us", desc: "info@calmatierra.com",
-        icon: Mail
+        title: "Contact.grid.email.title",
+        desc: "Contact.grid.web.desc",
+        icon: Mail,
     },
     {
-        title: "Website", desc: "www.calmatierra.com",
-        icon: Computer
+        title: "Contact.grid.web.title",
+        desc: "Contact.grid.web.desc",
+        icon: Computer,
     },
     {
-        title: "Phone", desc: "+34 952 00 00 00",
-        icon: Phone
+        title: "Contact.grid.phone.title",
+        desc: "Contact.grid.phone.desc",
+        icon: Phone,
     },
 ];
 
-// NEW: The Form Configuration
 export const FORMCONTENT: ContactForm = {
     title: "Contact.Form.title",
-    buttonText: "Contact.Form.buttonText",
+    desc: "Contact.Form.desc",
     fields: [
         {
-            label: "Contact.Form.fields.fullName.label",
-            name: "fullName",
-            placeholder: "Contact.Form.fields.fullName.placeholder",
+            name: "firstName",
+            labelKey: "Contact.Form.label.FN",
+            placeholderKey: "Contact.Form.example.FN",
             type: "text",
         },
         {
-            label: "Contact.Form.fields.email.label",
-            name: "email",
-            placeholder: "Contact.Form.fields.email.placeholder",
-            type: "email",
+            name: "lastName",
+            labelKey: "Contact.Form.label.LN",
+            placeholderKey: "Contact.Form.example.LN",
+            type: "text",
         },
         {
-            label: "Contact.Form.fields.message.label",
+            name: "email",
+            labelKey: "Contact.Form.label.WE",
+            placeholderKey: "Contact.Form.example.WE",
+            type: "email",
+            fullWidth: true,
+        },
+        {
+            name: "company",
+            labelKey: "Contact.Form.label.CN",
+            placeholderKey: "Contact.Form.example.CN",
+            type: "text",
+            fullWidth: true,
+        },
+        {
+            name: "interest",
+            labelKey: "Contact.Form.label.IAIN",
+            placeholderKey: "Contact.Form.selectPlaceholder",
+            type: "select",
+            fullWidth: true,
+            options: [
+                "Contact.Form.interest.bulk",
+                "Contact.Form.interest.support",
+                "Contact.Form.interest.partner",
+                "Contact.Form.interest.other",
+            ],
+        },
+        {
             name: "message",
-            placeholder: "Contact.Form.fields.message.placeholder",
+            labelKey: "Contact.Form.label.M",
+            placeholderKey: "Contact.Form.example.M",
             type: "textarea",
+            fullWidth: true,
+            rows: 3,
         },
     ],
+    agree: "Contact.Form.agree",
+    send: "Contact.Form.send",
 };
