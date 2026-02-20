@@ -10,10 +10,10 @@ const ProductsHero = () => {
         <main className="w-full max-w-7xl  relative mx-auto px-4 md:px-6">
             <div className="grid grid-cols-2 gap-7 md:mb-15 md:my-0 my-15 ">
                 <div className="flex flex-col gap-5 md:col-span-1 col-span-2 relative justify-center ">
-                    <h1 className="md:text-6xl text-[43px] font-serif font-bold">
+                    <h1 className="md:text-6xl text-[40px] font-serif text-center md:text-start font-bold">
                         {t(HERO_CONTENT.title)}
                     </h1>
-                    <p className="md:text-xl text-md text-gray-400">
+                    <p className="md:text-xl text-md md:text-start text-center text-gray-400">
                         {t(HERO_CONTENT.desc)}
                     </p>
                 </div>
@@ -44,7 +44,7 @@ const ProductsHero = () => {
                     </Link>
                 </div>
             </div>
-            <span className="absolute md:flex hidden justify-self-center -bottom-5 ml-38 rotate-17 h-137 w-70 bg-white [clip-path:polygon(-8%_0%,0%_17%,100%_2%,100%_91%,40%_100%)]"></span>
+            <span className="absolute md:flex hidden right-120 -bottom-9 rotate-17 h-137 w-40 bg-white [clip-path:polygon(-8%_0%,0%_17%,100%_8%,100%_91%,0%_100%)]"></span>
         </main>
     );
 };

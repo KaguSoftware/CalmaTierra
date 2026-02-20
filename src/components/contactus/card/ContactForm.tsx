@@ -1,11 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { useForm, UseFormRegister } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "motion/react";
 import { Loader2, CheckCircle2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
+// Colocated data and logic imports
+import { HEADERCONTENT, GRIDCONTENT } from "./constants";
 import { contactFormSchema, ContactFormValues } from "@/src/lib/schemas";
 import { sendContactEmail } from "@/src/app/actions";
 
@@ -16,7 +19,7 @@ const FIELDS_CONFIG = [
 		name: "email",
 		label: "Work Email",
 		type: "email",
-		placeholder: "john@company.comm",
+		placeholder: "john@company.com",
 		fullWidth: true,
 	},
 	{
@@ -45,8 +48,8 @@ const FIELDS_CONFIG = [
 		fullWidth: true,
 	},
 ] as const;
-
 const ContactForm = () => {
+	const t = useTranslations();
 	const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 	const {
 		register,
@@ -64,7 +67,6 @@ const ContactForm = () => {
 			message: "",
 		},
 	});
-
 	const onSubmit = async (data: ContactFormValues) => {
 		const result = await sendContactEmail(data);
 		if (result?.success) {
@@ -76,67 +78,109 @@ const ContactForm = () => {
 			setTimeout(() => setStatus("idle"), 5000);
 		}
 	};
-
 	return (
-		<div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-neutral-100 h-fit w-full overflow-hidden relative">
-			<AnimatePresence mode="wait">
-				{status === "success" ? (
-					<SuccessState />
-				) : (
-					<motion.div
-						key="form"
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						exit={{ opacity: 0 }}
-					>
-						<FormHeader />
-						<form
-							onSubmit={handleSubmit(onSubmit)}
-							className="grid grid-cols-1 md:grid-cols-2 gap-5"
+		<div className="w-full grid grid-cols-2 lg:grid-cols-2 gap-12 items-start">
+			<div>
+				<div className="flex flex-col justify-between h-full text-green-900">
+					{/* Main Header */}
+					<div className="space-y-4">
+						<h1 className="font-black text-5xl md:text-6xl">
+							{t(HEADERCONTENT.title)}
+						</h1>
+						<p className="text-gray-600 max-w-150 text-lg">
+							{t(HEADERCONTENT.desc)}
+						</p>
+					</div>
+					{/* Info Grid */}
+					<div className="grid grid-cols-1 gap-8 mt-10">
+						{GRIDCONTENT.map((item, index) => {
+							const Icon = item.icon;
+							return (
+								<div
+									key={index}
+									className="flex flex-col gap-2 "
+								>
+									<div className="flex gap-4 ">
+										<Icon
+											className="text-[#c49f4f] mt-1"
+											size={18}
+										/>
+										<h3 className="text-xl font-bold">
+											{t(item.title)}
+										</h3>
+									</div>
+									<p className="text-neutral-400 ">
+										{t(item.desc)}
+									</p>
+								</div>
+							);
+						})}
+					</div>
+				</div>
+			</div>
+			<div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-neutral-100 h-fit w-full overflow-hidden relative">
+				<AnimatePresence mode="wait">
+					{status === "success" ? (
+						<SuccessState />
+					) : (
+						<motion.div
+							key="form"
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							exit={{ opacity: 0 }}
 						>
-							{FIELDS_CONFIG.map((field) => (
-								<Field
-									key={field.name}
-									{...field}
-									register={register}
-									error={
-										errors[
-											field.name as keyof ContactFormValues
-										]?.message
-									}
-								/>
-							))}
-
-							<div className="md:col-span-2 flex flex-col gap-2">
-								<label className="flex items-center gap-3 cursor-pointer group">
-									<input
-										type="checkbox"
-										{...register("privacyPolicy")}
-										className="w-4 h-4 rounded border-neutral-300 text-[#3c5b45] focus:ring-[#3c5b45] transition-all"
+							<FormHeader />
+							<form
+								onSubmit={handleSubmit(onSubmit)}
+								className="grid grid-cols-1 md:grid-cols-2 gap-5"
+							>
+								{FIELDS_CONFIG.map((field) => (
+									<Field
+										key={field.name}
+										{...field}
+										register={register}
+										error={
+											errors[
+												field.name as keyof ContactFormValues
+											]?.message
+										}
 									/>
-									<span className="text-xs text-neutral-600 group-hover:text-neutral-900 transition-colors">
-										I agree to the privacy policy and
-										processing of my data.
-									</span>
-								</label>
-								{errors.privacyPolicy && (
-									<ErrorMessage
-										message={errors.privacyPolicy.message}
-									/>
-								)}
-							</div>
+								))}
 
-							<div className="md:col-span-2 mt-2">
-								<SubmitButton isSubmitting={isSubmitting} />
-							</div>
-						</form>
-					</motion.div>
-				)}
-			</AnimatePresence>
+								<div className="md:col-span-2 flex flex-col gap-2">
+									<label className="flex items-center gap-3 cursor-pointer group">
+										<input
+											type="checkbox"
+											{...register("privacyPolicy")}
+											className="w-4 h-4 rounded border-neutral-300 text-[#3c5b45] focus:ring-[#3c5b45] transition-all"
+										/>
+										<span className="text-xs text-neutral-600 group-hover:text-neutral-900 transition-colors">
+											I agree to the privacy policy and
+											processing of my data.
+										</span>
+									</label>
+									{errors.privacyPolicy && (
+										<ErrorMessage
+											message={
+												errors.privacyPolicy
+													.message as string
+											}
+										/>
+									)}
+								</div>
+
+								<div className="md:col-span-2 mt-2">
+									<SubmitButton isSubmitting={isSubmitting} />
+								</div>
+							</form>
+						</motion.div>
+					)}
+				</AnimatePresence>
+			</div>
 		</div>
 	);
 };
-
+// Sub-components
 const FormHeader = () => (
 	<div className="mb-6">
 		<h2 className="text-2xl font-serif font-bold text-neutral-900 mb-1">
@@ -147,7 +191,6 @@ const FormHeader = () => (
 		</p>
 	</div>
 );
-
 const SuccessState = () => (
 	<motion.div
 		initial={{ opacity: 0, scale: 0.9 }}
@@ -190,7 +233,6 @@ const SuccessState = () => (
 		</motion.p>
 	</motion.div>
 );
-
 const Field = ({
 	label,
 	name,
@@ -207,7 +249,9 @@ const Field = ({
 
 	return (
 		<div
-			className={`flex flex-col gap-1.5 ${fullWidth ? "md:col-span-2" : ""}`}
+			className={`flex flex-col gap-1.5 ${
+				fullWidth ? "md:col-span-2" : ""
+			}`}
 		>
 			<label className="text-sm font-semibold text-neutral-700">
 				{label}
@@ -243,7 +287,6 @@ const Field = ({
 		</div>
 	);
 };
-
 const ErrorMessage = ({ message }: { message?: string }) => (
 	<span className="text-red-500 text-[10px] font-medium ml-1">{message}</span>
 );
@@ -263,5 +306,4 @@ const SubmitButton = ({ isSubmitting }: { isSubmitting: boolean }) => (
 		)}
 	</button>
 );
-
 export default ContactForm;

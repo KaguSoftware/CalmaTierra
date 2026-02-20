@@ -47,7 +47,7 @@ const Logistics = () => {
                         />
                         <span className="bg-gray-300 w-full h-full absolute top-0 rounded-2xl rotate-2 -z-10"></span>
                         <span className="bg-amber-200 w-full h-full absolute top-0 rounded-2xl -rotate-2 -z-10"></span>
-                        <div className="absolute bg-white -bottom-4 -left-6 shadow-2xl grid rounded-2xl p-6 justify-self-center">
+                        <div className="absolute bg-white md:-bottom-4 -bottom-10 md:-left-6 shadow-2xl grid rounded-2xl md:p-6 p-4 justify-self-center">
                             <div className="flex gap-2">
                                 <LOGISTICS_CONTENT.reach.icon className="text-[#c49f4f]" />
                                 <h1 className="font-bold">
@@ -63,7 +63,7 @@ const Logistics = () => {
             </div>
             <div className=" bg-green-900 w-12xl md:py-15 py-10">
                 <div className="w-full max-w-7xl md:grid grid-cols-2 justify-between relative mx-auto px-4 md:px-6">
-                    <div className="font-bold text-3xl font-serif">
+                    <div className="font-bold text-3xl font-serif text-center md:text-start">
                         <h1 className="text-white ">
                             {t(LOGISTICS_CONTENT.ready.Q)}
                         </h1>
@@ -73,10 +73,12 @@ const Logistics = () => {
                     </div>
                     <div className="  flex md:place-content-end place-content-center mt-5">
                         <Link
-                            className="p-3 px-7 bg-amber-100 rounded-lg text-green-800 place-self-end"
+                            className="p-3 px-7 w-full md:w-70 bg-amber-100 rounded-lg text-green-800 place-self-end"
                             href={"#"}
                         >
-                            <h1>{t(LOGISTICS_CONTENT.ready.contact)}</h1>
+                            <h1 className="text-center text-lg font-bold">
+                                {t(LOGISTICS_CONTENT.ready.contact)}
+                            </h1>
                         </Link>
                     </div>
                 </div>
