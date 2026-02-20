@@ -60,7 +60,18 @@
         "cta": "Get Started"
     },
     "Footer": {
-        "rights": "All rights reserved."
+        "year": "2023",
+        "name": "CalmaTierra",
+        "description": "Connecting the world's most reliable fertilizer refineries with the farmers who feed the planet.",
+        "contactTitle": "Contact",
+        "location": "Marbella, Spain",
+        "email": "info@calmatierra.com",
+        "phone": "+34 952 000 000",
+        "text": "All rights reserved.",
+        "link": {
+            "labelOne": "Privacy Policy",
+            "labelTwo": "Terms of Service"
+        }
     },
     "Products": {
         "hero": {
