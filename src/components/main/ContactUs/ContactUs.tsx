@@ -1,9 +1,17 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { CONTACTUS_CONTENT } from "./constants";
+import { useParams } from "next/navigation";
+
+type RouteParams = { locale: "en" | "es" };
 
 export default function ContactUs() {
     const t = useTranslations();
+    const { locale } = useParams<RouteParams>();
+
+    const withLocale = (path: string) => `/${locale}${path}`;
 
     return (
         <section className="relative overflow-hidden bg-[#2f5d44] py-20">
@@ -11,11 +19,13 @@ export default function ContactUs() {
                 <h2 className="font-serif text-4xl font-semibold tracking-tight text-white md:text-5xl">
                     {t(CONTACTUS_CONTENT.header)}
                 </h2>
+
                 <p className="mt-4 max-w-2xl text-base leading-relaxed text-emerald-100 md:text-lg">
                     {t(CONTACTUS_CONTENT.subheader)}
                 </p>
+
                 <Link
-                    href={CONTACTUS_CONTENT.button.href}
+                    href={withLocale(CONTACTUS_CONTENT.button.href)}
                     className="mt-10 inline-flex items-center justify-center rounded-md bg-[#c49f4f] px-8 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#CA8A04] focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-950"
                 >
                     {t(CONTACTUS_CONTENT.button.lable)}
