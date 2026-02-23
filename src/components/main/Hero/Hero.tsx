@@ -18,8 +18,8 @@ export default function Hero() {
 		<main className="relative min-h-[80vh] text-white overflow-hidden">
 			{/* background image and overlay */}
 			<motion.div
-				initial={{ scale: 1.1, opacity: 0 }}
-				animate={{ scale: 1, opacity: 1 }}
+				initial={{ scale: 1.1 }}
+				animate={{ scale: 1 }}
 				transition={{ duration: 1.5 }}
 			>
 				<Image
