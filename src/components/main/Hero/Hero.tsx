@@ -21,6 +21,7 @@ export default function Hero() {
 				initial={{ scale: 1.1 }}
 				animate={{ scale: 1 }}
 				transition={{ duration: 1.5 }}
+				className="absolute inset-0 w-full h-full"
 			>
 				<Image
 					src={INDEX_HERO_CONTENT.image.src}
