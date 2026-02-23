@@ -1,24 +1,37 @@
+"use client";
 import { FORMS_CONTENT } from "./constants";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { motion } from "motion/react";
+import { fadeInUp, staggerContainer } from "@/src/lib/animations";
 
 const Forms = () => {
     const t = useTranslations();
 
     return (
         <main className=" bg-gray-100 p-1 w-10xl">
-            <div className="md:grid grid-cols-2 gap-10 w-full max-w-7xl mx-auto px-4  md:px-6">
-                <div className="col-span-2 text-center mt-15 grid gap-3">
+            <motion.div 
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true, margin: "-100px" }}
+                variants={staggerContainer}
+                className="md:grid grid-cols-2 gap-10 w-full max-w-7xl mx-auto px-4  md:px-6"
+            >
+                <motion.div 
+                    variants={fadeInUp}
+                    className="col-span-2 text-center mt-15 grid gap-3"
+                >
                     <h1 className="text-4xl font-bold font-serif">
                         {t(FORMS_CONTENT.title)}
                     </h1>
                     <p className="text-lg text-neutral-400 md:mb-0 mb-4">
                         {t(FORMS_CONTENT.desc)}
                     </p>
-                </div>
+                </motion.div>
                 {FORMS_CONTENT.cards.map((cards) => (
-                    <div
+                    <motion.div
                         key={cards.title}
+                        variants={fadeInUp}
                         className="w-full justify-between gap-6 grid rounded-2xl mb-20 bg-white shadow-xl"
                     >
                         <div className="relative">
@@ -61,9 +74,9 @@ const Forms = () => {
                                 ))}
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
         </main>
     );
 };

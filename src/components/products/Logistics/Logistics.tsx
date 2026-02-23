@@ -3,14 +3,25 @@ import { Link } from "@/src/i18n/routing";
 import { LOGISTICS_CONTENT } from "./constants";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { motion } from "motion/react";
+import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer } from "@/src/lib/animations";
 
 const Logistics = () => {
     const t = useTranslations();
     return (
         <>
-            <div className="w-full max-w-7xl  relative mx-auto px-4 md:px-6">
+            <motion.div 
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true, margin: "-100px" }}
+                variants={staggerContainer}
+                className="w-full max-w-7xl  relative mx-auto px-4 md:px-6"
+            >
                 <div className="md:grid grid-cols-2 my-15">
-                    <div className="flex flex-col gap-9  ">
+                    <motion.div 
+                        variants={fadeInLeft}
+                        className="flex flex-col gap-9  "
+                    >
                         <div className="grid gap-4">
                             <h2 className="text-[#c49f4f] text-lg">
                                 {t(LOGISTICS_CONTENT.header.header)}
@@ -36,8 +47,11 @@ const Logistics = () => {
                                 </div>
                             </div>
                         ))}
-                    </div>
-                    <div className="rounded-2xl relative shadow-2xl md:mt-0 mt-10">
+                    </motion.div>
+                    <motion.div 
+                        variants={fadeInRight}
+                        className="rounded-2xl relative shadow-2xl md:mt-0 mt-10"
+                    >
                         <Image
                             src={LOGISTICS_CONTENT.img.src}
                             alt={LOGISTICS_CONTENT.img.alt}
@@ -58,10 +72,16 @@ const Logistics = () => {
                                 {t(LOGISTICS_CONTENT.reach.desc)}
                             </p>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
-            </div>
-            <div className=" bg-green-900 w-12xl md:py-15 py-10">
+            </motion.div>
+            <motion.div 
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+                className=" bg-green-900 w-12xl md:py-15 py-10"
+            >
                 <div className="w-full max-w-7xl md:grid grid-cols-2 justify-between relative mx-auto px-4 md:px-6">
                     <div className="font-bold text-3xl font-serif text-center md:text-start">
                         <h1 className="text-white ">
@@ -82,7 +102,7 @@ const Logistics = () => {
                         </Link>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     );
 };

@@ -4,6 +4,8 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { CONTACTUS_CONTENT } from "./constants";
 import { useParams } from "next/navigation";
+import { motion } from "motion/react";
+import { fadeInUp } from "@/src/lib/animations";
 
 type RouteParams = { locale: "en" | "es" };
 
@@ -15,7 +17,13 @@ export default function ContactUs() {
 
     return (
         <section className="relative overflow-hidden bg-[#2f5d44] py-20">
-            <div className="relative mx-auto flex max-w-4xl flex-col items-center px-4 text-center">
+            <motion.div 
+                className="relative mx-auto flex max-w-4xl flex-col items-center px-4 text-center"
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true, margin: "-100px" }}
+                variants={fadeInUp}
+            >
                 <h2 className="font-serif text-4xl font-semibold tracking-tight text-white md:text-5xl">
                     {t(CONTACTUS_CONTENT.header)}
                 </h2>
@@ -30,7 +38,7 @@ export default function ContactUs() {
                 >
                     {t(CONTACTUS_CONTENT.button.lable)}
                 </Link>
-            </div>
+            </motion.div>
         </section>
     );
 }
