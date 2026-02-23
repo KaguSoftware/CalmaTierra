@@ -5,6 +5,6 @@ export const CONTACTUS_CONTENT: ContactUsContent = {
     subheader: "ContactUsMain.subheader",
     button: {
         lable: "ContactUsMain.button.lable",
-        href: "ContactUsMain.button.href"
+        href: "/contact"
     }
 };

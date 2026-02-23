@@ -77,8 +77,7 @@ export default function AboutUs() {
 
                     {/* Right */}
                     <div className="relative md:p-0 p-3 ">
-                        <div className="absolute -right-2 md:-right-5 p-3  md:-top-5 -top-1  md:h-full h-[95%] md:w-full w-[95%] rounded-md border-2 border-[#BFA05A] " />
-
+                        <div className="hidden lg:block absolute -right-5 -top-5 h-full w-full rounded-md border-2 border-[#BFA05A]" />
                         <div className="relative overflow-hidden rounded-md shadow-2xl bg-slate-100">
                             <div className="relative aspect-4/3 w-full">
                                 <Image

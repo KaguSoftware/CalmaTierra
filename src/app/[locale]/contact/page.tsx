@@ -1,5 +1,4 @@
 import Card from "@/src/components/contactus/card/Card";
-import Contacts from "@/src/components/contactus/contacts/contacts";
 import HeroContactUs from "@/src/components/contactus/hero/hero";
 
 export default function ContactPage() {

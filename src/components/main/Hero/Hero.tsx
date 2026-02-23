@@ -1,10 +1,17 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 import { INDEX_HERO_CONTENT } from "./constants";
+
+type RouteParams = { locale: "en" | "es" };
 
 export default function Hero() {
     const t = useTranslations();
+    const { locale } = useParams<RouteParams>();
+
+    const withLocale = (path: string) => `/${locale}${path}`;
     return (
         <main className="relative min-h-[80vh] text-white">
             {/* background image and overlay */}
@@ -31,14 +38,14 @@ export default function Hero() {
 
                     <div className="flex flex-col items-center justify-center gap-4 sm:flex-row font-bold text-lg ">
                         <Link
-                            href={INDEX_HERO_CONTENT.buttonOne.href}
+                            href={withLocale(INDEX_HERO_CONTENT.buttonOne.href)}
                             className="transition bg-white hover:-translate-y-1 text-black rounded-sm px-6 py-3 items-center justify-center hover:bg-white/80 "
                         >
                             {t(INDEX_HERO_CONTENT.buttonOne.label)}
                         </Link>
 
                         <Link
-                            href={INDEX_HERO_CONTENT.buttonTwo.href}
+                            href={withLocale(INDEX_HERO_CONTENT.buttonTwo.href)}
                             className="transition border-2 rounded-sm px-6 py-2.5 hover:bg-white hover:text-black"
                         >
                             {t(INDEX_HERO_CONTENT.buttonTwo.label)}
