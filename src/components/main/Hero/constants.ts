@@ -7,7 +7,7 @@ export const INDEX_HERO_CONTENT: HeroData = {
     image: { src: "/Farm.png", alt: "farm" },
     buttonOne: {
         label: "HeroMain.buttonOne.label",
-        href: "/products"
+        href: "/product"
     },
     buttonTwo: {
         label: "HeroMain.buttonTwo.label",
