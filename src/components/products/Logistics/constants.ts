@@ -12,7 +12,7 @@ export const LOGISTICS_CONTENT: LogisticsContent = {
         desc: "Products.Log.reach.desc",
         icon: Globe2,
     },
-    img: { src: "/Logistics.png", alt: "big ship" },
+    img: { src: "/Logistics.webp", alt: "big ship" },
     Box: [
         {
             title: "Products.Log.Box.1.title",

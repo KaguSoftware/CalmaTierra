@@ -5,7 +5,7 @@ export const FORMS_CONTENT: FormsContent = {
     desc: "Products.Forms.desc",
     cards: [
         {
-            img: { src: "/forms.card1.png", alt: "ghj" },
+            img: { src: "/forms.card1.webp", alt: "ghj" },
             title: "Products.Forms.cards.1.title",
             desc: {
                 tagTextColor: "text-green-800",
@@ -21,7 +21,7 @@ export const FORMS_CONTENT: FormsContent = {
             icon: CircleIcon,
         },
         {
-            img: { src: "/forms.card2.png", alt: "ghj" },
+            img: { src: "/forms.card2.webp", alt: "ghj" },
             title: "Products.Forms.cards.2.title",
             desc: {
                 tagTextColor: "text-orange-800",

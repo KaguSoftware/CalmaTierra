@@ -34,11 +34,12 @@ const ProductsHero = () => {
                     className="md:col-span-1 col-span-2 relative items-center justify-center "
                 >
                     <Image
-                        src="/ProductsHero.png"
+                        src="/ProductsHero.webp"
                         alt="hero"
                         width={400}
                         height={400}
                         className="md:h-full h-80 object-cover w-full"
+                        priority
                     />
                     <span className="absolute top-0 md:bg-linear-to-r bg-linear-to-b z-10 from-white to-transparent w-full h-full"></span>
                     {/*PARSA plz let me know if this is ugly i might forget to ask  */}

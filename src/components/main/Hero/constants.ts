@@ -4,7 +4,7 @@ export const INDEX_HERO_CONTENT: HeroData = {
     headerOne: "HeroMain.headerOne",
     headerTwo: "HeroMain.headerTwo",
     description: "HeroMain.discription",
-    image: { src: "/Farm.png", alt: "farm" },
+    image: { src: "/Farm.webp", alt: "farm" },
     buttonOne: {
         label: "HeroMain.buttonOne.label",
         href: "/product"
