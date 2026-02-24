@@ -189,6 +189,16 @@ const ContactForm = () => {
             </div>
         </div>
     );
+                                <div className="md:col-span-2 mt-2">
+                                    <SubmitButton isSubmitting={isSubmitting} />
+                                </div>
+                            </form>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </div>
+        </div>
+    );
 };
 
 // Sub-components
@@ -270,6 +280,8 @@ const Field = ({
 }: any) => {
     const commonClass =
         "border border-neutral-300 rounded-lg p-2.5 focus:ring-2 focus:ring-[#3c5b45] focus:outline-none transition-all w-full text-sm";
+    const commonClass =
+        "border border-neutral-300 rounded-lg p-2.5 focus:ring-2 focus:ring-[#3c5b45] focus:outline-none transition-all w-full text-sm";
 
     return (
         <div
@@ -315,6 +327,7 @@ const Field = ({
 };
 
 const ErrorMessage = ({ message }: { message?: string }) => (
+    <span className="text-red-500 text-[10px] font-medium ml-1">{message}</span>
     <span className="text-red-500 text-[10px] font-medium ml-1">{message}</span>
 );
 

@@ -16,6 +16,6 @@ export const ABOUT_US_FEATURES: AboutFeature[] = [
 
 export const ABOUT_US_ASSETS = {
     ctaHref: "/about",
-    imageSrc: "/farmer.png",
+    imageSrc: "/farmer.webp",
     imageAlt: "A farmer inspecting crops in a field",
 } as const;
