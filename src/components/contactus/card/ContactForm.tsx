@@ -46,46 +46,45 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="w-full grid grid-cols-2 lg:grid-cols-2 gap-12 items-start">
+        <div className="w-full grid md:grid-cols-2 lg:grid-cols-2 gap-12 items-center  md:items-start">
             <div>
-                <div className="flex flex-col justify-between h-full text-green-900">
+                <div className="flex flex-col text-center justify-between h-full text-green-900">
                     <div className="space-y-4">
                         <h1 className="font-black text-5xl md:text-6xl">
                             {t.has(HEADERCONTENT.title)
                                 ? t(HEADERCONTENT.title)
                                 : HEADERCONTENT.title}
                         </h1>
-                        <p className="text-gray-600 max-w-150 text-lg">
+                        <p className="text-gray-600 place-self-center max-w-150 text-lg">
                             {t.has(HEADERCONTENT.desc)
                                 ? t(HEADERCONTENT.desc)
                                 : HEADERCONTENT.desc}
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-8 mt-10">
+                    <div className="grid gap-8 mt-10">
                         {GRIDCONTENT.map((item, index) => {
                             const Icon = item.icon;
                             return (
-                                <div
-                                    key={index}
-                                    className="flex flex-col gap-2"
-                                >
-                                    <div className="flex gap-4">
-                                        <Icon
-                                            className="text-[#c49f4f] mt-1"
-                                            size={18}
-                                        />
-                                        <h3 className="text-xl font-bold">
-                                            {t.has(item.title)
-                                                ? t(item.title)
-                                                : item.title}
-                                        </h3>
+                                <div key={index} className="grid gap-2">
+                                    <div className="grid col-span-1 gap-4 items-center">
+                                        <div className="flex gap-4  justify-center">
+                                            <Icon
+                                                className="text-[#c49f4f] mt-1"
+                                                size={18}
+                                            />
+                                            <h3 className="text-xl font-bold">
+                                                {t.has(item.title)
+                                                    ? t(item.title)
+                                                    : item.title}
+                                            </h3>
+                                        </div>
+                                        <p className="text-neutral-400  text-center  place-self-center md:max-w-xs max-w-2xs">
+                                            {t.has(item.desc)
+                                                ? t(item.desc)
+                                                : item.desc}
+                                        </p>
                                     </div>
-                                    <p className="text-neutral-400">
-                                        {t.has(item.desc)
-                                            ? t(item.desc)
-                                            : item.desc}
-                                    </p>
                                 </div>
                             );
                         })}
