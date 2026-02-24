@@ -9,7 +9,7 @@ import { fadeInUp, fadeInRight, staggerContainer } from "@/src/lib/animations";
 const ProductsHero = () => {
     const t = useTranslations();
     return (
-        <motion.main 
+        <motion.main
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
@@ -17,7 +17,7 @@ const ProductsHero = () => {
             className="w-full max-w-7xl  relative mx-auto px-4 md:px-6"
         >
             <div className="grid grid-cols-2 gap-7 md:mb-15 md:my-0 my-15 ">
-                <motion.div 
+                <motion.div
                     variants={fadeInUp}
                     className="flex flex-col gap-5 md:col-span-1 col-span-2 relative justify-center "
                 >
@@ -29,7 +29,7 @@ const ProductsHero = () => {
                     </p>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     variants={fadeInRight}
                     className="md:col-span-1 col-span-2 relative items-center justify-center "
                 >
@@ -44,7 +44,7 @@ const ProductsHero = () => {
                     <span className="absolute top-0 md:bg-linear-to-r bg-linear-to-b z-10 from-white to-transparent w-full h-full"></span>
                     {/*PARSA plz let me know if this is ugly i might forget to ask  */}
                 </motion.div>
-                <motion.div 
+                <motion.div
                     variants={fadeInUp}
                     className="md:flex grid md:col-span-1 col-span-2 gap-5 md:bottom-30 md:absolute text-center text-xl"
                 >

@@ -2,13 +2,18 @@
 import { SPEC_CONTENT } from "./constants";
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
-import { fadeInUp, fadeInLeft, fadeInRight, staggerContainer } from "@/src/lib/animations";
+import {
+    fadeInUp,
+    fadeInLeft,
+    fadeInRight,
+    staggerContainer,
+} from "@/src/lib/animations";
 
 const TechSpec = () => {
     const t = useTranslations();
 
     return (
-        <motion.main 
+        <motion.main
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, margin: "-100px" }}
@@ -16,7 +21,7 @@ const TechSpec = () => {
             className="w-full max-w-7xl mx-auto px-4 md:px-6"
         >
             <div className="md:grid grid-cols-2 gap-15 relative mb-15">
-                <motion.div 
+                <motion.div
                     variants={fadeInUp}
                     className="col-span-2 text-center grid gap-10 justify-center"
                 >
@@ -30,7 +35,7 @@ const TechSpec = () => {
                         {t(SPEC_CONTENT.header.desc)}
                     </p>
                 </motion.div>
-                <motion.div 
+                <motion.div
                     variants={fadeInLeft}
                     className="border flex flex-col p-7 gap-2 border-gray-100 shadow-xl m-3 rounded-2xl"
                 >
@@ -44,13 +49,13 @@ const TechSpec = () => {
                         </div>
                     ))}
                 </motion.div>
-                <motion.div 
+                <motion.div
                     variants={fadeInUp}
                     className=" absolute md:right-158 -right-2 md:top-63 top-75 rotate-15 rounded-full md:py-8 py-7.5 px-4 text-xl md:text-2xl text-white bg-[#c49f4f] max-w-fit"
                 >
                     46%N
                 </motion.div>
-                <motion.div 
+                <motion.div
                     variants={fadeInRight}
                     className="grid grid-cols-2 gap-6 md:mt-0 mt-15 md:text-start text-center"
                 >

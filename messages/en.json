@@ -1,178 +1,227 @@
 {
-	"HeroMain": {
-		"headerOne": "Reliable Name in the",
-		"headerTwo": "World of Fertilizer",
-		"discription": "CalmaTierra is an internationally successful fertilizer distributor located in Marbella, Spain, bridging the gap between premiumrefineries and global agriculture.",
-		"buttonOne": {
-			"label": "Explore Our Products"
-		},
-		"buttonTwo": {
-			"label": "Get In Touch"
-		}
-	},
-	"CardMain": {
-		"title": "Why Choose CalmaTierra",
-		"cardOne": {
-			"title": "Global Logistics",
-			"desc": "Seamless coordination of sea and land freight to ensure your fertilizer arrives on time, anywhere in the world."
-		},
-		"cardTwo": {
-			"title": "Quality Assurance",
-			"desc": "Every shipment is rigorously tested to meet international standards. We compromise on price, never on quality."
-		},
-		"cardThree": {
-			"title": "Long-term Partnership",
-			"desc": "We build relationships that last generations. Your growth and stability are the measures of our success."
-		}
-	},
-	"ContactUsMain": {
-		"header": "Ready to secure your supply?",
-		"subheader": "Contact our sales team in Marbella for a customized quote tailored to your agricultural needs.",
-		"button": {
-			"lable": "Contact Us"
-		}
-	},
-	"AboutUs": {
-		"badge": "ABOUT US",
-		"heading": "Empowering Global\nAgriculture",
-		"description": "At CalmaTierra, we understand that agriculture is the backbone of civilization. Based in the strategic hub of Marbella, Spain, we operate as a vital link in the global supply chain, ensuring that high-quality fertilizers reach farmers and distributors efficiently and reliably.",
-		"cta": "Learn more about our mission",
-		"features": [
-			{
-				"title": "Direct access to reliable refineries",
-				"description": "We cut out unnecessary intermediaries to provide competitive pricing and guaranteed quality."
-			},
-			{
-				"title": "Profound market knowledge",
-				"description": "Decades of combined experience navigating the volatile fertilizer commodity landscape."
-			}
-		]
-	},
-	"Navigation": {
-		"home": "Home",
-		"about": "About Us",
-		"products": "Products",
-		"contact": "Contact Us"
-	},
-	"Hero": {
-		"title": "Welcome to Calma Tierra",
-		"subtitle": "Connecting with nature, one step at a time.",
-		"cta": "Get Started"
-	},
-	"Footer": {
-		"year": "2026",
-		"name": "CalmaTierra",
-		"description": "Connecting the world's most reliable fertilizer refineries with the farmers who feed the planet.",
-		"contactTitle": "Contact",
-		"location": "Marbella, Spain",
-		"email": "info@calmatierra.com",
-		"phone": "+34 952 000 000",
-		"text": "All rights reserved.",
-		"link": {
-			"labelOne": "Privacy Policy",
-			"labelTwo": "Terms of Service"
-		}
-	},
-	"Products": {
-		"hero": {
-			"title": "Premium Nitrogen Fertilizers",
-			"desc": "Powering global agriculture with high-purity Urea solutions. From source to soil, we ensure quality, consistency, and reliable delivery for your crop yields.",
-			"button1": {
-				"label": "View Specifications"
-			},
-			"button2": {
-				"label": "Contact Sales"
-			}
-		},
-		"Spec": {
-			"header": {
-				"header": "TECHNICAL SPECIFICATIONS",
-				"title": "What is Urea 46% Nitrogen?",
-				"desc": "The world's most concentrated solid nitrogen fertilizer, essential for healthy plant growth and maximum yield efficiency."
-			},
-			"lcard": {
-				"title": "Chemical Composition",
-				"list": {
-					"1": "Nitrogen Content: 46% Minimum",
-					"2": "Biuret: 1.0% Maximum (Low Biuret)",
-					"3": "Moisture: 0.5% Maximum",
-					"4": "Form: Solid, Water Soluble"
-				}
-			},
-			"desc": {
-				"header": "Why Choose Our Urea?",
-				"desc": "Our urea provides a high concentration of nitrogen in a form that is easy to handle and store. It promotes rapid vegetative growth and strengthens the root system."
-			},
-			"box": {
-				"1": {
-					"title": "Cost Effective",
-					"desc": "Lowest cost per unit of nitrogen compared to other fertilizers."
-				},
-				"2": {
-					"title": "Versatile Application",
-					"desc": "Suitable for soil application, fertigation, and foliar sprays."
-				}
-			}
-		},
-		"Forms": {
-			"title": "Product Forms",
-			"desc": "Choose the physical structure that matches your application equipment and needs.",
-			"cards": {
-				"1": {
-					"title": "Prilled Urea",
-					"desc": {
-						"tag": "Fast Acting",
-						"size": "1.0mm - 2.4mm",
-						"desc": "Smaller, smoother particles produced by spraying molten urea down a prilling tower. Ideal for industrial use and rapid soil integration."
-					},
-					"List": {
-						"listItem1": "Harder surface finish",
-						"listItem2": "Faster dissolution rate"
-					}
-				},
-				"2": {
-					"title": "Granular Urea",
-					"desc": {
-						"tag": "High Durability",
-						"size": "2.0mm - 4.0mm",
-						"desc": "Larger particles created through granulation. Superior hardness makes it resistant to crushing and dust formation during transport and blending."
-					},
-					"List": {
-						"listItem1": "Ideal for bulk blending (NPK)",
-						"listItem2": "Better for mechanical spreading"
-					}
-				}
-			}
-		},
-		"Log": {
-			"header": {
-				"header": "GLOBAL LOGISTICS",
-				"title": "Flexible Packaging Solutions",
-				"desc": "Whether you are a local distributor or a large-scale agricultural cooperative, CalmaTierra adapts to your infrastructure. We manage the entire supply chain from production plant to your port of discharge."
-			},
-			"reach": {
-				"header": "Global Reach",
-				"desc": "Exporting to over 25 countries across South America, Africa, and Southeast Asia."
-			},
-			"Box": {
-				"1": {
-					"title": "50kg Polypropylene Bags",
-					"desc": "Standard woven bags with PE liner. Easy manual handling for retail distribution."
-				},
-				"2": {
-					"title": "1,000kg Jumbo Bags (FIBC)",
-					"desc": "Big Bags with discharge spout. Optimized for forklift handling and medium-scale storage."
-				},
-				"3": {
-					"title": "Bulk Vessel Shipment",
-					"desc": "Direct loose bulk loading into vessel holds. Highest efficiency for large volume orders (5,000MT+)."
-				}
-			},
-			"ready": {
-				"Q": "Ready to order?",
-				"get": "Get a quote for your next shipment.",
-				"contact": "Contact Us"
-			}
-		}
-	}
+    "HeroMain": {
+        "headerOne": "Reliable Name in the",
+        "headerTwo": "World of Fertilizer",
+        "discription": "CalmaTierra is an internationally successful fertilizer distributor located in Marbella, Spain, bridging the gap between premiumrefineries and global agriculture.",
+        "buttonOne": {
+            "label": "Explore Our Products"
+        },
+        "buttonTwo": {
+            "label": "Get In Touch"
+        }
+    },
+    "CardMain": {
+        "title": "Why Choose CalmaTierra",
+        "cardOne": {
+            "title": "Global Logistics",
+            "desc": "Seamless coordination of sea and land freight to ensure your fertilizer arrives on time, anywhere in the world."
+        },
+        "cardTwo": {
+            "title": "Quality Assurance",
+            "desc": "Every shipment is rigorously tested to meet international standards. We compromise on price, never on quality."
+        },
+        "cardThree": {
+            "title": "Long-term Partnership",
+            "desc": "We build relationships that last generations. Your growth and stability are the measures of our success."
+        }
+    },
+    "ContactUsMain": {
+        "header": "Ready to secure your supply?",
+        "subheader": "Contact our sales team in Marbella for a customized quote tailored to your agricultural needs.",
+        "button": {
+            "lable": "Contact Us"
+        }
+    },
+    "AboutUs": {
+        "badge": "ABOUT US",
+        "heading": "Empowering Global\nAgriculture",
+        "description": "At CalmaTierra, we understand that agriculture is the backbone of civilization. Based in the strategic hub of Marbella, Spain, we operate as a vital link in the global supply chain, ensuring that high-quality fertilizers reach farmers and distributors efficiently and reliably.",
+        "cta": "Learn more about our mission",
+        "features": [
+            {
+                "title": "Direct access to reliable refineries",
+                "description": "We cut out unnecessary intermediaries to provide competitive pricing and guaranteed quality."
+            },
+            {
+                "title": "Profound market knowledge",
+                "description": "Decades of combined experience navigating the volatile fertilizer commodity landscape."
+            }
+        ]
+    },
+    "Navigation": {
+        "home": "Home",
+        "about": "About Us",
+        "products": "Products",
+        "contact": "Contact Us"
+    },
+    "Hero": {
+        "title": "Welcome to Calma Tierra",
+        "subtitle": "Connecting with nature, one step at a time.",
+        "cta": "Get Started"
+    },
+    "Footer": {
+        "year": "2026",
+        "name": "CalmaTierra",
+        "description": "Connecting the world's most reliable fertilizer refineries with the farmers who feed the planet.",
+        "contactTitle": "Contact",
+        "location": "Marbella, Spain",
+        "email": "info@calmatierra.com",
+        "phone": "+34 952 000 000",
+        "text": "All rights reserved.",
+        "link": {
+            "labelOne": "Privacy Policy",
+            "labelTwo": "Terms of Service"
+        }
+    },
+    "Products": {
+        "hero": {
+            "title": "Premium Nitrogen Fertilizers",
+            "desc": "Powering global agriculture with high-purity Urea solutions. From source to soil, we ensure quality, consistency, and reliable delivery for your crop yields.",
+            "button1": {
+                "label": "View Specifications"
+            },
+            "button2": {
+                "label": "Contact Sales"
+            }
+        },
+        "Spec": {
+            "header": {
+                "header": "TECHNICAL SPECIFICATIONS",
+                "title": "What is Urea 46% Nitrogen?",
+                "desc": "The world's most concentrated solid nitrogen fertilizer, essential for healthy plant growth and maximum yield efficiency."
+            },
+            "lcard": {
+                "title": "Chemical Composition",
+                "list": {
+                    "1": "Nitrogen Content: 46% Minimum",
+                    "2": "Biuret: 1.0% Maximum (Low Biuret)",
+                    "3": "Moisture: 0.5% Maximum",
+                    "4": "Form: Solid, Water Soluble"
+                }
+            },
+            "desc": {
+                "header": "Why Choose Our Urea?",
+                "desc": "Our urea provides a high concentration of nitrogen in a form that is easy to handle and store. It promotes rapid vegetative growth and strengthens the root system."
+            },
+            "box": {
+                "1": {
+                    "title": "Cost Effective",
+                    "desc": "Lowest cost per unit of nitrogen compared to other fertilizers."
+                },
+                "2": {
+                    "title": "Versatile Application",
+                    "desc": "Suitable for soil application, fertigation, and foliar sprays."
+                }
+            }
+        },
+        "Forms": {
+            "title": "Product Forms",
+            "desc": "Choose the physical structure that matches your application equipment and needs.",
+            "cards": {
+                "1": {
+                    "title": "Prilled Urea",
+                    "desc": {
+                        "tag": "Fast Acting",
+                        "size": "1.0mm - 2.4mm",
+                        "desc": "Smaller, smoother particles produced by spraying molten urea down a prilling tower. Ideal for industrial use and rapid soil integration."
+                    },
+                    "List": {
+                        "listItem1": "Harder surface finish",
+                        "listItem2": "Faster dissolution rate"
+                    }
+                },
+                "2": {
+                    "title": "Granular Urea",
+                    "desc": {
+                        "tag": "High Durability",
+                        "size": "2.0mm - 4.0mm",
+                        "desc": "Larger particles created through granulation. Superior hardness makes it resistant to crushing and dust formation during transport and blending."
+                    },
+                    "List": {
+                        "listItem1": "Ideal for bulk blending (NPK)",
+                        "listItem2": "Better for mechanical spreading"
+                    }
+                }
+            }
+        },
+        "Log": {
+            "header": {
+                "header": "GLOBAL LOGISTICS",
+                "title": "Flexible Packaging Solutions",
+                "desc": "Whether you are a local distributor or a large-scale agricultural cooperative, CalmaTierra adapts to your infrastructure. We manage the entire supply chain from production plant to your port of discharge."
+            },
+            "reach": {
+                "header": "Global Reach",
+                "desc": "Exporting to over 25 countries across South America, Africa, and Southeast Asia."
+            },
+            "Box": {
+                "1": {
+                    "title": "50kg Polypropylene Bags",
+                    "desc": "Standard woven bags with PE liner. Easy manual handling for retail distribution."
+                },
+                "2": {
+                    "title": "1,000kg Jumbo Bags (FIBC)",
+                    "desc": "Big Bags with discharge spout. Optimized for forklift handling and medium-scale storage."
+                },
+                "3": {
+                    "title": "Bulk Vessel Shipment",
+                    "desc": "Direct loose bulk loading into vessel holds. Highest efficiency for large volume orders (5,000MT+)."
+                }
+            },
+            "ready": {
+                "Q": "Ready to order?",
+                "get": "Get a quote for your next shipment.",
+                "contact": "Contact Us"
+            }
+        }
+    },
+    "Contact": {
+        "hero": {
+            "header": "Get in Touch with CalmaTierra",
+            "desc": "Expert agricultural solutions tailored to your soil. Contact our specialists for advice, partnerships, and global distribution quotations."
+        },
+
+        "header": {
+            "title": "Our Headquarters",
+            "desc": "Located in the heart of Spain's agricultural innovation hub, our Marbella office manages our international logistics and client relations. We are open Monday through Friday, 9:00 AM to 6:00 PM CET."
+        },
+        "grid": {
+            "office": {
+                "title": "Office Address",
+                "desc": "Calle de la Agricultura, 45 Polígono Industrial Nueva Andalucía 29660 Marbella, Málaga, Spain"
+            },
+            "email": { "title": "Email Us", "desc": "info@calmatierra.com" },
+            "web": { "title": "Website", "desc": "www.calmatierra.com" },
+            "phone": { "title": "Phone", "desc": "+34 952 00 00 00" }
+        },
+        "Form": {
+            "title": "Send us a Message",
+            "desc": "Our team typically responds within 24 hours.",
+            "label": {
+                "FN": "First Name",
+                "LN": "Last Name",
+                "WE": "Work Email",
+                "CN": "Company Name",
+                "IAIN": "I am interested in",
+                "M": "Message"
+            },
+            "example": {
+                "FN": "John",
+                "LN": "Doe",
+                "WE": "john@company.com",
+                "CN": "Your company",
+                "IAIN": "",
+                "M": "Tell us about your needs..."
+            },
+            "agree": "I agree to the privacy policy and processing of my data.",
+            "selectPlaceholder": "Select an option",
+            "interest": {
+                "bulk": "Bulk Fertilizer order",
+                "support": "Technical Support",
+                "partner": "Partnership Inquiry",
+                "other": "Other"
+            },
+            "send": "Send Message"
+        }
+    }
 }

@@ -10,14 +10,14 @@ const Forms = () => {
 
     return (
         <main className=" bg-gray-100 p-1 w-10xl">
-            <motion.div 
+            <motion.div
                 initial="initial"
                 whileInView="animate"
                 viewport={{ once: true, margin: "-100px" }}
                 variants={staggerContainer}
                 className="md:grid grid-cols-2 gap-10 w-full max-w-7xl mx-auto px-4  md:px-6"
             >
-                <motion.div 
+                <motion.div
                     variants={fadeInUp}
                     className="col-span-2 text-center mt-15 grid gap-3"
                 >
