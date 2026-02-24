@@ -46,7 +46,7 @@ const ProductsHero = () => {
                 </motion.div>
                 <motion.div
                     variants={fadeInUp}
-                    className="md:flex grid md:col-span-1 col-span-2 gap-5 md:bottom-30 md:absolute text-center text-xl"
+                    className="md:flex grid md:col-span-1 col-span-2 gap-5 md:bottom-20 md:absolute text-center text-xl"
                 >
                     <Link
                         href={HERO_CONTENT.button1.href}
